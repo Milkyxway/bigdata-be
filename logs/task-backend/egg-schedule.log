@@ -1,0 +1,24 @@
+2023-09-13 15:08:07,462 INFO 19779 [Timer] /Users/xujiashuang/Desktop/task-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 48112539ms at 2023-09-14 04:30:00.001
+2023-09-13 15:08:07,463 INFO 19779 [Timer] /Users/xujiashuang/Desktop/task-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js next time will execute after 31912537ms at 2023-09-14 00:00:00.000
+2023-09-13 15:08:07,463 INFO 19779 [Timer] /Users/xujiashuang/Desktop/task-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 31913537ms at 2023-09-14 00:00:01.000
+2023-09-13 15:08:07,463 INFO 19779 [Timer] /Users/xujiashuang/Desktop/task-server/app/schedule/checkTaskStatus.js next time will execute after 85912537ms at 2023-09-14 15:00:00.000
+2023-09-13 15:08:07,313 INFO 19787 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/task-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-13 15:08:07,313 INFO 19787 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/task-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-13 15:08:07,313 INFO 19787 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/task-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-13 15:08:07,313 INFO 19787 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/task-server/app/schedule/checkTaskStatus.js
+2023-09-13 15:32:00,315 INFO 20913 [Timer] /Users/xujiashuang/Desktop/task-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 46679687ms at 2023-09-14 04:30:00.002
+2023-09-13 15:32:00,315 INFO 20913 [Timer] /Users/xujiashuang/Desktop/task-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js next time will execute after 30479685ms at 2023-09-14 00:00:00.000
+2023-09-13 15:32:00,315 INFO 20913 [Timer] /Users/xujiashuang/Desktop/task-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 30480685ms at 2023-09-14 00:00:01.000
+2023-09-13 15:32:00,316 INFO 20913 [Timer] /Users/xujiashuang/Desktop/task-server/app/schedule/checkTaskStatus.js next time will execute after 84479685ms at 2023-09-14 15:00:00.001
+2023-09-13 15:32:00,151 INFO 20917 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/task-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-13 15:32:00,151 INFO 20917 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/task-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-13 15:32:00,151 INFO 20917 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/task-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-13 15:32:00,151 INFO 20917 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/task-server/app/schedule/checkTaskStatus.js
+2023-09-13 15:33:36,423 INFO 21006 [Timer] /Users/xujiashuang/Desktop/task-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 46583578ms at 2023-09-14 04:30:00.001
+2023-09-13 15:33:36,424 INFO 21006 [Timer] /Users/xujiashuang/Desktop/task-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js next time will execute after 30383577ms at 2023-09-14 00:00:00.001
+2023-09-13 15:33:36,424 INFO 21006 [Timer] /Users/xujiashuang/Desktop/task-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 30384576ms at 2023-09-14 00:00:01.000
+2023-09-13 15:33:36,424 INFO 21006 [Timer] /Users/xujiashuang/Desktop/task-server/app/schedule/checkTaskStatus.js next time will execute after 84383576ms at 2023-09-14 15:00:00.000
+2023-09-13 15:33:36,273 INFO 21010 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/task-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-13 15:33:36,273 INFO 21010 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/task-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-13 15:33:36,273 INFO 21010 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/task-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-13 15:33:36,273 INFO 21010 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/task-server/app/schedule/checkTaskStatus.js
