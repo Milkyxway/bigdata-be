@@ -35,13 +35,13 @@ module.exports = (appInfo) => {
 		// database configuration
 		client: {
 			// host
-			host: "localhost",
+			host: "172.16.179.5",
 			// port
 			port: "3306",
 			// username
-			user: "root",
+			user: "bigdata_period",
 			// password
-			password: "11111111",
+			password: "LxAcfec3kFf6SbYH",
 			// database
 			database: "bigdata_period",
 		},
