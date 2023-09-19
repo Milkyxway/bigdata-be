@@ -17,35 +17,35 @@ module.exports = (appInfo) => {
 
 	// add your middleware config here
 	config.middleware = [];
-	// config.mysql = {
-	// 	// database configuration
-	// 	client: {
-	// 		host: "localhost",
-	// 		// port
-	// 		port: "3306",
-	// 		// username
-	// 		user: "htgl",
-	// 		// password
-	// 		password: "zRjJbtfDK6tcR4xx",
-	// 		// database
-	// 		database: "task_base",
-	// 	},
-	// };
 	config.mysql = {
 		// database configuration
 		client: {
-			// host
-			host: "172.16.179.5",
+			host: "localhost",
 			// port
 			port: "3306",
 			// username
-			user: "bigdata_period",
+			user: "root",
 			// password
-			password: "LxAcfec3kFf6SbYH",
+			password: "11111111",
 			// database
 			database: "bigdata_period",
 		},
 	};
+	// config.mysql = {
+	// 	// database configuration
+	// 	client: {
+	// 		// host
+	// 		host: "172.16.179.5",
+	// 		// port
+	// 		port: "3306",
+	// 		// username
+	// 		user: "bigdata_period",
+	// 		// password
+	// 		password: "LxAcfec3kFf6SbYH",
+	// 		// database
+	// 		database: "bigdata_period",
+	// 	},
+	// };
 	// 前端端口，跟随实际情况修改
 	const port = 9001;
 	const domainWhiteList = [
@@ -75,6 +75,11 @@ module.exports = (appInfo) => {
 	// add your user config here
 	const userConfig = {
 		// myAppName: 'egg',
+		uploadDir: "app/public/upload",
+	};
+	config.multipart = {
+		mode: "file",
+		whitelist: [".xlsx", ".sql"],
 	};
 
 	return {

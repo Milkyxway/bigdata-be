@@ -11,7 +11,10 @@
     "egg": "^3",
     "egg-cors": "^2.2.3",
     "egg-mysql": "^4.0.0",
-    "egg-scripts": "^2"
+    "egg-scripts": "^2",
+    "ftp": "^0.3.10",
+    "mkdirp": "^3.0.1",
+    "moment": "^2.29.4"
   },
   "devDependencies": {
     "egg-bin": "^5",

@@ -25,5 +25,8 @@ module.exports = (app) => {
 	// router.post("/api/login", controller.role.login);
 	// router.post("/api/modifypwd", controller.role.modifypwd);
 	// router.post("/api/createaccount", controller.role.createaccount);
-	router.post("/api/bigdata/reportlist", controller.bigdata.getReportList);
+	router.post("/api/report/list", controller.bigdata.getReportList);
+	router.post("/api/report/sqllist", controller.bigdata.getSQL);
+	router.post("/api/report/download", controller.bigdata.downloadSql);
+	router.post("/api/report/upload", controller.upload.upload);
 };

@@ -1,89 +1,8 @@
 const Service = require("egg").Service;
 
-class RoleService extends Service {
-	// async index() {
-	//   const result = await this.app.mysql.select('category')
-	//   return result
-	// }
+class BigDataService extends Service {
 	/**
-	 * 登录接口
-	 * @param {*} query
-	 */
-	async login(query) {
-		const user = await this.app.mysql.select("user", {
-			where: {
-				username: query.username,
-			},
-		});
-		return new Promise((res, reject) => {
-			if (user) {
-				if (query.password === user[0].password) {
-					const { password, ...rest } = user[0];
-					res({
-						userInfo: { ...rest }, // 不把密码返回给前端
-					});
-				}
-			}
-			reject();
-		});
-	}
-
-	/**
-	 * 修改密码
-	 * @param {*} query
-	 */
-	async modifyPwd(query) {
-		const { oldPwd, userId, newPwd } = query;
-		return new Promise(async (resolve, reject) => {
-			const userInfo = await this.app.mysql.select("user", {
-				where: { userId },
-			});
-			if (userInfo) {
-				const pwdInsql = userInfo[0].password;
-				if (pwdInsql !== oldPwd) {
-					reject("旧密码输入有误");
-				} else if (pwdInsql === newPwd) {
-					reject("新密码与旧密码一致");
-				} else {
-					await this.app.mysql.update(
-						"user",
-						{ password: newPwd },
-						{
-							where: {
-								userId: query.userId,
-							},
-						}
-					);
-					resolve();
-				}
-			} else {
-				reject("获取用户失败");
-			}
-		});
-	}
-
-	/**
-	 * 创建账户
-	 * @param {*} query
-	 */
-	async createAccount(query) {
-		return new Promise(async (resolve, reject) => {
-			const useraccount = await this.app.mysql.select("user", {
-				where: {
-					username: query.username,
-				},
-			});
-			if (useraccount.length) {
-				reject("该账户已存在");
-			} else {
-				await this.app.mysql.insert("user", query);
-				resolve();
-			}
-		});
-	}
-
-	/**
-	 * 获取
+	 * 获取报表列表
 	 * @param {*} query
 	 * @returns
 	 */
@@ -116,6 +35,86 @@ class RoleService extends Service {
 			}
 		});
 	}
+
+	downloadSql() {
+		return new Promise((resolve, reject) => {
+			const ftp = require("ftp");
+			const client = new ftp();
+			client.on("ready", function () {
+				client.get("客户明细.sql", (err, file) => {
+					resolve(file);
+				});
+			});
+
+			client.connect({
+				host: "172.16.179.5",
+				user: "htgl",
+				password: "zaSFW5AfrerDm6eD",
+			});
+		});
+	}
+	uploadSql() {
+		return new Promise((resolve, reject) => {
+			const ftp = require("ftp");
+			const client = new ftp();
+			client.on("ready", function () {
+				client.get("客户明细.sql", function (error, stream) {
+					console.log(error);
+				});
+			});
+
+			client.connect({
+				host: "172.16.179.5",
+				user: "htgl",
+				password: "zaSFW5AfrerDm6eD",
+			});
+		});
+	}
+
+	async getSQL(query) {
+		const { pageNum, pageSize } = query;
+		let whereStr = "";
+		if (query.keyword) {
+			whereStr = `where sqlName like '%${query.keyword}%'`;
+		}
+		// return new Promise((resolve, reject) => {
+		// 	const ftp = require("ftp");
+		// 	const client = new ftp();
+		// 	client.on("ready", function () {
+		// 		client.list(function (err, list) {
+		// 			if (err) throw err;
+		// 			const result = list.map((i) => {
+		// 				return {
+		// 					...i,
+		// 					name: Buffer.from(i.name, "latin1").toString("utf8"),
+		// 				};
+		// 			});
+		// 			resolve(result.filter((i) => i.type === "-"));
+
+		// 			client.end();
+		// 		});
+		// 	});
+
+		// 	client.connect({
+		// 		host: "172.16.179.5",
+		// 		user: "htgl",
+		// 		password: "zaSFW5AfrerDm6eD",
+		// 	});
+		// });
+		return new Promise(async (resolve, reject) => {
+			const sqlStr = `select * from sql_Data ${whereStr} order by createTime desc limit ${
+				pageNum * pageSize
+			},${pageSize}`;
+			const [{ "COUNT(*)": total }] = await this.app.mysql.query(
+				`SELECT COUNT(*) from sql_Data ${whereStr}`
+			);
+			const list = await this.app.mysql.query(sqlStr);
+			resolve({
+				list,
+				total,
+			});
+		});
+	}
 }
 
-module.exports = RoleService;
+module.exports = BigDataService;
