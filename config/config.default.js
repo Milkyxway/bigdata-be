@@ -81,6 +81,11 @@ module.exports = (appInfo) => {
 		mode: "file",
 		whitelist: [".xlsx", ".sql"],
 	};
+	config.cluster = {
+		listen: {
+			port: 7002,
+		},
+	};
 
 	return {
 		...config,
