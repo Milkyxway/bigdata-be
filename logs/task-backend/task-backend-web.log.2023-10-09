@@ -1,0 +1,759 @@
+2023-09-27 09:25:49,061 ERROR 3558 [-/127.0.0.1/-/43ms POST /api/report/list] nodejs.ER_NO_SUCH_TABLEError: ER_NO_SUCH_TABLE: Table 'bigdata_period.bigdata_period' doesn't exist
+    at Sequence._packetToError (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Pool.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Pool.js:199:23)
+    at node:internal/util:360:7
+    at new Promise (<anonymous>)
+    at Pool.query (node:internal/util:346:12)
+    at RDSClient._query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/client.js:33:33)
+    at RDSClient.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:62:31)
+    at /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:23:39
+    at new Promise (<anonymous>)
+    at BigDataService.getReportList (/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:11:10)
+    at BigDataController.getReportList (/Users/xujiashuang/Desktop/bigdata-server/app/controller/bigdata.js:8:40)
+    sql: select * from bigdata_period where reportType = 3 order by createTime desc limit 0,10
+code: "ER_NO_SUCH_TABLE"
+errno: 1146
+sqlMessage: "Table 'bigdata_period.bigdata_period' doesn't exist"
+sqlState: "42S02"
+index: 0
+sql: "select * from bigdata_period where reportType = 3 order by createTime desc limit 0,10"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_NO_SUCH_TABLEError"
+pid: 3558
+hostname: xjswwdeMBP
+
+2023-09-27 09:29:30,347 ERROR 3558 [-/127.0.0.1/-/5ms POST /api/report/list] nodejs.ER_NO_SUCH_TABLEError: ER_NO_SUCH_TABLE: Table 'bigdata_period.bigdata_period' doesn't exist
+    at Sequence._packetToError (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Pool.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Pool.js:199:23)
+    at node:internal/util:360:7
+    at new Promise (<anonymous>)
+    at Pool.query (node:internal/util:346:12)
+    at RDSClient._query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/client.js:33:33)
+    at RDSClient.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:62:31)
+    at /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:23:39
+    at new Promise (<anonymous>)
+    at BigDataService.getReportList (/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:11:10)
+    at BigDataController.getReportList (/Users/xujiashuang/Desktop/bigdata-server/app/controller/bigdata.js:8:40)
+    sql: select * from bigdata_period where reportType = 3 order by createTime desc limit 0,10
+code: "ER_NO_SUCH_TABLE"
+errno: 1146
+sqlMessage: "Table 'bigdata_period.bigdata_period' doesn't exist"
+sqlState: "42S02"
+index: 0
+sql: "select * from bigdata_period where reportType = 3 order by createTime desc limit 0,10"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_NO_SUCH_TABLEError"
+pid: 3558
+hostname: xjswwdeMBP
+
+2023-09-27 09:43:01,047 ERROR 5732 [-/127.0.0.1/-/31ms POST /api/report/list] nodejs.ER_NO_SUCH_TABLEError: ER_NO_SUCH_TABLE: Table 'bigdata_period.bigdata_period' doesn't exist
+    at Sequence._packetToError (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Pool.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Pool.js:199:23)
+    at node:internal/util:360:7
+    at new Promise (<anonymous>)
+    at Pool.query (node:internal/util:346:12)
+    at RDSClient._query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/client.js:33:33)
+    at RDSClient.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:62:31)
+    at /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:23:39
+    at new Promise (<anonymous>)
+    at BigDataService.getReportList (/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:11:10)
+    at BigDataController.getReportList (/Users/xujiashuang/Desktop/bigdata-server/app/controller/bigdata.js:8:40)
+    sql: select * from bigdata_period where reportType = 3 order by createTime desc limit 0,10
+code: "ER_NO_SUCH_TABLE"
+errno: 1146
+sqlMessage: "Table 'bigdata_period.bigdata_period' doesn't exist"
+sqlState: "42S02"
+index: 0
+sql: "select * from bigdata_period where reportType = 3 order by createTime desc limit 0,10"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_NO_SUCH_TABLEError"
+pid: 5732
+hostname: xjswwdeMBP
+
+2023-09-27 09:48:34,425 ERROR 5732 [-/127.0.0.1/-/12ms POST /api/report/list] nodejs.ER_NO_SUCH_TABLEError: ER_NO_SUCH_TABLE: Table 'bigdata_period.bigdata_period' doesn't exist
+    at Sequence._packetToError (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Pool.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Pool.js:199:23)
+    at node:internal/util:360:7
+    at new Promise (<anonymous>)
+    at Pool.query (node:internal/util:346:12)
+    at RDSClient._query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/client.js:33:33)
+    at RDSClient.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:62:31)
+    at /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:23:39
+    at new Promise (<anonymous>)
+    at BigDataService.getReportList (/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:11:10)
+    at BigDataController.getReportList (/Users/xujiashuang/Desktop/bigdata-server/app/controller/bigdata.js:8:40)
+    sql: select * from bigdata_period where reportType = 3 order by createTime desc limit 0,10
+code: "ER_NO_SUCH_TABLE"
+errno: 1146
+sqlMessage: "Table 'bigdata_period.bigdata_period' doesn't exist"
+sqlState: "42S02"
+index: 0
+sql: "select * from bigdata_period where reportType = 3 order by createTime desc limit 0,10"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_NO_SUCH_TABLEError"
+pid: 5732
+hostname: xjswwdeMBP
+
+2023-09-27 09:53:25,157 ERROR 5732 [-/127.0.0.1/-/21ms POST /api/report/list] nodejs.ER_NO_SUCH_TABLEError: ER_NO_SUCH_TABLE: Table 'bigdata_period.bigdata_period' doesn't exist
+    at Sequence._packetToError (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Pool.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Pool.js:199:23)
+    at node:internal/util:360:7
+    at new Promise (<anonymous>)
+    at Pool.query (node:internal/util:346:12)
+    at RDSClient._query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/client.js:33:33)
+    at RDSClient.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:62:31)
+    at /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:23:39
+    at new Promise (<anonymous>)
+    at BigDataService.getReportList (/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:11:10)
+    at BigDataController.getReportList (/Users/xujiashuang/Desktop/bigdata-server/app/controller/bigdata.js:8:40)
+    sql: select * from bigdata_period where reportType = 1 order by createTime desc limit 0,10
+code: "ER_NO_SUCH_TABLE"
+errno: 1146
+sqlMessage: "Table 'bigdata_period.bigdata_period' doesn't exist"
+sqlState: "42S02"
+index: 0
+sql: "select * from bigdata_period where reportType = 1 order by createTime desc limit 0,10"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_NO_SUCH_TABLEError"
+pid: 5732
+hostname: xjswwdeMBP
+
+2023-09-27 09:53:25,696 ERROR 5732 [-/127.0.0.1/-/7ms POST /api/report/list] nodejs.ER_NO_SUCH_TABLEError: ER_NO_SUCH_TABLE: Table 'bigdata_period.bigdata_period' doesn't exist
+    at Sequence._packetToError (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Pool.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Pool.js:199:23)
+    at node:internal/util:360:7
+    at new Promise (<anonymous>)
+    at Pool.query (node:internal/util:346:12)
+    at RDSClient._query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/client.js:33:33)
+    at RDSClient.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:62:31)
+    at /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:23:39
+    at new Promise (<anonymous>)
+    at BigDataService.getReportList (/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:11:10)
+    at BigDataController.getReportList (/Users/xujiashuang/Desktop/bigdata-server/app/controller/bigdata.js:8:40)
+    sql: select * from bigdata_period where reportType = 2 order by createTime desc limit 0,10
+code: "ER_NO_SUCH_TABLE"
+errno: 1146
+sqlMessage: "Table 'bigdata_period.bigdata_period' doesn't exist"
+sqlState: "42S02"
+index: 0
+sql: "select * from bigdata_period where reportType = 2 order by createTime desc limit 0,10"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_NO_SUCH_TABLEError"
+pid: 5732
+hostname: xjswwdeMBP
+
+2023-09-27 09:58:14,457 ERROR 5732 [-/127.0.0.1/-/4ms POST /api/report/list] nodejs.ER_NO_SUCH_TABLEError: ER_NO_SUCH_TABLE: Table 'bigdata_period.bigdata_period' doesn't exist
+    at Sequence._packetToError (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Pool.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Pool.js:199:23)
+    at node:internal/util:360:7
+    at new Promise (<anonymous>)
+    at Pool.query (node:internal/util:346:12)
+    at RDSClient._query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/client.js:33:33)
+    at RDSClient.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:62:31)
+    at /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:23:39
+    at new Promise (<anonymous>)
+    at BigDataService.getReportList (/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:11:10)
+    at BigDataController.getReportList (/Users/xujiashuang/Desktop/bigdata-server/app/controller/bigdata.js:8:40)
+    sql: select * from bigdata_period where reportType = 3 order by createTime desc limit 0,10
+code: "ER_NO_SUCH_TABLE"
+errno: 1146
+sqlMessage: "Table 'bigdata_period.bigdata_period' doesn't exist"
+sqlState: "42S02"
+index: 0
+sql: "select * from bigdata_period where reportType = 3 order by createTime desc limit 0,10"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_NO_SUCH_TABLEError"
+pid: 5732
+hostname: xjswwdeMBP
+
+2023-09-27 09:58:14,918 ERROR 5732 [-/127.0.0.1/-/3ms POST /api/report/list] nodejs.ER_NO_SUCH_TABLEError: ER_NO_SUCH_TABLE: Table 'bigdata_period.bigdata_period' doesn't exist
+    at Sequence._packetToError (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Pool.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Pool.js:199:23)
+    at node:internal/util:360:7
+    at new Promise (<anonymous>)
+    at Pool.query (node:internal/util:346:12)
+    at RDSClient._query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/client.js:33:33)
+    at RDSClient.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:62:31)
+    at /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:23:39
+    at new Promise (<anonymous>)
+    at BigDataService.getReportList (/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:11:10)
+    at BigDataController.getReportList (/Users/xujiashuang/Desktop/bigdata-server/app/controller/bigdata.js:8:40)
+    sql: select * from bigdata_period where reportType = 4 order by createTime desc limit 0,10
+code: "ER_NO_SUCH_TABLE"
+errno: 1146
+sqlMessage: "Table 'bigdata_period.bigdata_period' doesn't exist"
+sqlState: "42S02"
+index: 0
+sql: "select * from bigdata_period where reportType = 4 order by createTime desc limit 0,10"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_NO_SUCH_TABLEError"
+pid: 5732
+hostname: xjswwdeMBP
+
+2023-09-27 09:58:36,476 ERROR 5732 [-/127.0.0.1/-/3ms POST /api/report/list] nodejs.ER_NO_SUCH_TABLEError: ER_NO_SUCH_TABLE: Table 'bigdata_period.bigdata_period' doesn't exist
+    at Sequence._packetToError (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Pool.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Pool.js:199:23)
+    at node:internal/util:360:7
+    at new Promise (<anonymous>)
+    at Pool.query (node:internal/util:346:12)
+    at RDSClient._query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/client.js:33:33)
+    at RDSClient.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:62:31)
+    at /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:23:39
+    at new Promise (<anonymous>)
+    at BigDataService.getReportList (/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:11:10)
+    at BigDataController.getReportList (/Users/xujiashuang/Desktop/bigdata-server/app/controller/bigdata.js:8:40)
+    sql: select * from bigdata_period where reportType = 1 order by createTime desc limit 0,10
+code: "ER_NO_SUCH_TABLE"
+errno: 1146
+sqlMessage: "Table 'bigdata_period.bigdata_period' doesn't exist"
+sqlState: "42S02"
+index: 0
+sql: "select * from bigdata_period where reportType = 1 order by createTime desc limit 0,10"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_NO_SUCH_TABLEError"
+pid: 5732
+hostname: xjswwdeMBP
+
+2023-09-27 09:58:41,654 ERROR 5732 [-/127.0.0.1/-/3ms POST /api/report/list] nodejs.ER_NO_SUCH_TABLEError: ER_NO_SUCH_TABLE: Table 'bigdata_period.bigdata_period' doesn't exist
+    at Sequence._packetToError (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Pool.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Pool.js:199:23)
+    at node:internal/util:360:7
+    at new Promise (<anonymous>)
+    at Pool.query (node:internal/util:346:12)
+    at RDSClient._query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/client.js:33:33)
+    at RDSClient.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:62:31)
+    at /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:23:39
+    at new Promise (<anonymous>)
+    at BigDataService.getReportList (/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:11:10)
+    at BigDataController.getReportList (/Users/xujiashuang/Desktop/bigdata-server/app/controller/bigdata.js:8:40)
+    sql: select * from bigdata_period where reportType = 3 order by createTime desc limit 0,10
+code: "ER_NO_SUCH_TABLE"
+errno: 1146
+sqlMessage: "Table 'bigdata_period.bigdata_period' doesn't exist"
+sqlState: "42S02"
+index: 0
+sql: "select * from bigdata_period where reportType = 3 order by createTime desc limit 0,10"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_NO_SUCH_TABLEError"
+pid: 5732
+hostname: xjswwdeMBP
+
+2023-09-27 09:58:42,037 ERROR 5732 [-/127.0.0.1/-/3ms POST /api/report/list] nodejs.ER_NO_SUCH_TABLEError: ER_NO_SUCH_TABLE: Table 'bigdata_period.bigdata_period' doesn't exist
+    at Sequence._packetToError (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Pool.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Pool.js:199:23)
+    at node:internal/util:360:7
+    at new Promise (<anonymous>)
+    at Pool.query (node:internal/util:346:12)
+    at RDSClient._query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/client.js:33:33)
+    at RDSClient.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:62:31)
+    at /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:23:39
+    at new Promise (<anonymous>)
+    at BigDataService.getReportList (/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:11:10)
+    at BigDataController.getReportList (/Users/xujiashuang/Desktop/bigdata-server/app/controller/bigdata.js:8:40)
+    sql: select * from bigdata_period where reportType = 4 order by createTime desc limit 0,10
+code: "ER_NO_SUCH_TABLE"
+errno: 1146
+sqlMessage: "Table 'bigdata_period.bigdata_period' doesn't exist"
+sqlState: "42S02"
+index: 0
+sql: "select * from bigdata_period where reportType = 4 order by createTime desc limit 0,10"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_NO_SUCH_TABLEError"
+pid: 5732
+hostname: xjswwdeMBP
+
+2023-09-27 10:05:02,465 ERROR 5732 [-/127.0.0.1/-/6ms POST /api/report/list] nodejs.ER_NO_SUCH_TABLEError: ER_NO_SUCH_TABLE: Table 'bigdata_period.bigdata_period' doesn't exist
+    at Sequence._packetToError (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Pool.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Pool.js:199:23)
+    at node:internal/util:360:7
+    at new Promise (<anonymous>)
+    at Pool.query (node:internal/util:346:12)
+    at RDSClient._query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/client.js:33:33)
+    at RDSClient.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:62:31)
+    at /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:23:39
+    at new Promise (<anonymous>)
+    at BigDataService.getReportList (/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:11:10)
+    at BigDataController.getReportList (/Users/xujiashuang/Desktop/bigdata-server/app/controller/bigdata.js:8:40)
+    sql: select * from bigdata_period where reportType = 3 order by createTime desc limit 0,10
+code: "ER_NO_SUCH_TABLE"
+errno: 1146
+sqlMessage: "Table 'bigdata_period.bigdata_period' doesn't exist"
+sqlState: "42S02"
+index: 0
+sql: "select * from bigdata_period where reportType = 3 order by createTime desc limit 0,10"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_NO_SUCH_TABLEError"
+pid: 5732
+hostname: xjswwdeMBP
+
+2023-09-27 14:13:34,113 ERROR 8781 [-/127.0.0.1/-/22ms POST /api/report/createtask] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'taskName' in 'field list'
+    at Sequence._packetToError (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Pool.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Pool.js:199:23)
+    at node:internal/util:360:7
+    at new Promise (<anonymous>)
+    at Pool.query (node:internal/util:346:12)
+    at RDSClient._query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/client.js:33:33)
+    at RDSClient.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:62:31)
+    at RDSClient.insert (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:159:27)
+    at /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:106:26
+    at new Promise (<anonymous>)
+    at BigDataService.createTask (/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:104:10)
+    sql: INSERT INTO `task_list`(`taskName`, `taskCategory`, `oneTimeExe`, `createTime`) VALUES('55', '一次性', '2023-09-27T14:13:34+08:00', '2023-09-27 14:13:34.107')
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'taskName' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `task_list`(`taskName`, `taskCategory`, `oneTimeExe`, `createTime`) VALUES('55', '一次性', '2023-09-27T14:13:34+08:00', '2023-09-27 14:13:34.107')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 8781
+hostname: xjswwdeMBP
+
+2023-09-27 14:38:35,950 ERROR 10147 [-/127.0.0.1/-/3ms POST /api/report/tasklist] nodejs.TypeError: Cannot read properties of undefined (reading 'pageNum')
+    at /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:131:14
+    at new Promise (<anonymous>)
+    at BigDataService.getTaskList (/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:128:10)
+    at BigDataController.getTaskList (/Users/xujiashuang/Desktop/bigdata-server/app/controller/bigdata.js:38:40)
+    at Object.callFn (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-core@5.3.1@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-core@5.3.1@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_@eggjs_router@2.0.1@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_@eggjs_router@2.0.1@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 10147
+hostname: xjswwdeMBP
+
+2023-09-27 14:38:59,622 ERROR 10147 [-/127.0.0.1/-/10ms POST /api/report/tasklist] nodejs.TypeError: Cannot read properties of undefined (reading 'pageNum')
+    at /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:131:14
+    at new Promise (<anonymous>)
+    at BigDataService.getTaskList (/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:128:10)
+    at BigDataController.getTaskList (/Users/xujiashuang/Desktop/bigdata-server/app/controller/bigdata.js:38:40)
+    at Object.callFn (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-core@5.3.1@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-core@5.3.1@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_@eggjs_router@2.0.1@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_@eggjs_router@2.0.1@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 10147
+hostname: xjswwdeMBP
+
+2023-09-27 14:39:03,591 ERROR 10147 [-/127.0.0.1/-/1ms POST /api/report/tasklist] nodejs.TypeError: Cannot read properties of undefined (reading 'pageNum')
+    at /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:131:14
+    at new Promise (<anonymous>)
+    at BigDataService.getTaskList (/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:128:10)
+    at BigDataController.getTaskList (/Users/xujiashuang/Desktop/bigdata-server/app/controller/bigdata.js:38:40)
+    at Object.callFn (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-core@5.3.1@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-core@5.3.1@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_@eggjs_router@2.0.1@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_@eggjs_router@2.0.1@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 10147
+hostname: xjswwdeMBP
+
+2023-10-09 15:41:55,505 ERROR 12195 [-/127.0.0.1/-/61ms POST /api/report/createtask] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'reportName' in 'field list'
+    at Sequence._packetToError (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Pool.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Pool.js:199:23)
+    at node:internal/util:360:7
+    at new Promise (<anonymous>)
+    at Pool.query (node:internal/util:346:12)
+    at RDSClient._query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/client.js:33:33)
+    at RDSClient.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:62:31)
+    at RDSClient.insert (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:159:27)
+    at /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:110:41
+    at new Promise (<anonymous>)
+    at BigDataService.createTask (/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:108:10)
+    sql: INSERT INTO `task_list`(`reportName`, `timeRange`, `periodType`, `priority`, `LargeCategory`, `TimeOn`, `endTime`, `createTime`) VALUES('555', ('2023-10-08T16:00:00.000Z', '2023-11-14T16:00:00.000Z'), 2, '', '周期性', '2023-10-09T00:00:00+08:00', '2023-11-15T00:00:00+08:00', '2023-10-09 15:41:55.455')
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'reportName' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `task_list`(`reportName`, `timeRange`, `periodType`, `priority`, `LargeCategory`, `TimeOn`, `endTime`, `createTime`) VALUES('555', ('2023-10-08T16:00:00.000Z', '2023-11-14T16:00:00.000Z'), 2, '', '周期性', '2023-10-09T00:00:00+08:00', '2023-11-15T00:00:00+08:00', '2023-10-09 15:41:55.455')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 12195
+hostname: xjswwdeMBP
+
+2023-10-09 15:46:51,145 ERROR 12195 [-/127.0.0.1/-/56ms POST /api/report/createtask] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'reportName' in 'field list'
+    at Sequence._packetToError (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Pool.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Pool.js:199:23)
+    at node:internal/util:360:7
+    at new Promise (<anonymous>)
+    at Pool.query (node:internal/util:346:12)
+    at RDSClient._query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/client.js:33:33)
+    at RDSClient.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:62:31)
+    at RDSClient.insert (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:159:27)
+    at /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:110:41
+    at new Promise (<anonymous>)
+    at BigDataService.createTask (/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:108:10)
+    sql: INSERT INTO `task_list`(`reportName`, `timeRange`, `periodType`, `priority`, `LargeCategory`, `TimeOn`, `endTime`, `createTime`) VALUES('555', ('2023-10-08T16:00:00.000Z', '2023-11-14T16:00:00.000Z'), 2, '', '周期性', '2023-10-09T00:00:00+08:00', '2023-11-15T00:00:00+08:00', '2023-10-09 15:46:51.100')
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'reportName' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `task_list`(`reportName`, `timeRange`, `periodType`, `priority`, `LargeCategory`, `TimeOn`, `endTime`, `createTime`) VALUES('555', ('2023-10-08T16:00:00.000Z', '2023-11-14T16:00:00.000Z'), 2, '', '周期性', '2023-10-09T00:00:00+08:00', '2023-11-15T00:00:00+08:00', '2023-10-09 15:46:51.100')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 12195
+hostname: xjswwdeMBP
+
+2023-10-09 15:47:24,660 ERROR 12195 [-/127.0.0.1/-/8ms POST /api/report/createtask] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'reportName' in 'field list'
+    at Sequence._packetToError (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Pool.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Pool.js:199:23)
+    at node:internal/util:360:7
+    at new Promise (<anonymous>)
+    at Pool.query (node:internal/util:346:12)
+    at RDSClient._query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/client.js:33:33)
+    at RDSClient.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:62:31)
+    at RDSClient.insert (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:159:27)
+    at /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:110:41
+    at new Promise (<anonymous>)
+    at BigDataService.createTask (/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:108:10)
+    sql: INSERT INTO `task_list`(`reportName`, `timeRange`, `periodType`, `priority`, `LargeCategory`, `TimeOn`, `endTime`, `createTime`) VALUES('555', ('2023-10-08T16:00:00.000Z', '2023-11-14T16:00:00.000Z'), 2, '', '周期性', '2023-10-09T00:00:00+08:00', '2023-11-15T00:00:00+08:00', '2023-10-09 15:47:24.652')
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'reportName' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `task_list`(`reportName`, `timeRange`, `periodType`, `priority`, `LargeCategory`, `TimeOn`, `endTime`, `createTime`) VALUES('555', ('2023-10-08T16:00:00.000Z', '2023-11-14T16:00:00.000Z'), 2, '', '周期性', '2023-10-09T00:00:00+08:00', '2023-11-15T00:00:00+08:00', '2023-10-09 15:47:24.652')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 12195
+hostname: xjswwdeMBP
+
+2023-10-09 15:47:51,719 ERROR 12195 [-/127.0.0.1/-/6ms POST /api/report/createtask] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'reportName' in 'field list'
+    at Sequence._packetToError (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Pool.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Pool.js:199:23)
+    at node:internal/util:360:7
+    at new Promise (<anonymous>)
+    at Pool.query (node:internal/util:346:12)
+    at RDSClient._query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/client.js:33:33)
+    at RDSClient.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:62:31)
+    at RDSClient.insert (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:159:27)
+    at /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:110:41
+    at new Promise (<anonymous>)
+    at BigDataService.createTask (/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:108:10)
+    sql: INSERT INTO `task_list`(`reportName`, `timeRange`, `periodType`, `priority`, `LargeCategory`, `TimeOn`, `endTime`, `createTime`) VALUES('555', ('2023-10-08T16:00:00.000Z', '2023-11-14T16:00:00.000Z'), 2, '', '周期性', '2023-10-09T00:00:00+08:00', '2023-11-15T00:00:00+08:00', '2023-10-09 15:47:51.713')
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'reportName' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `task_list`(`reportName`, `timeRange`, `periodType`, `priority`, `LargeCategory`, `TimeOn`, `endTime`, `createTime`) VALUES('555', ('2023-10-08T16:00:00.000Z', '2023-11-14T16:00:00.000Z'), 2, '', '周期性', '2023-10-09T00:00:00+08:00', '2023-11-15T00:00:00+08:00', '2023-10-09 15:47:51.713')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 12195
+hostname: xjswwdeMBP
+
+2023-10-09 16:05:37,638 ERROR 18896 [-/127.0.0.1/-/42ms POST /api/report/createtask] nodejs.ER_NO_SUCH_TABLEError: ER_NO_SUCH_TABLE: Table 'bigdata_period.task_list' doesn't exist
+    at Sequence._packetToError (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Pool.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Pool.js:199:23)
+    at node:internal/util:360:7
+    at new Promise (<anonymous>)
+    at Pool.query (node:internal/util:346:12)
+    at RDSClient._query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/client.js:33:33)
+    at RDSClient.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:62:31)
+    at RDSClient.insert (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:159:27)
+    at /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:110:41
+    at new Promise (<anonymous>)
+    at BigDataService.createTask (/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:108:10)
+    sql: INSERT INTO `task_list`(`reportName`, `timeRange`, `periodType`, `priority`, `LargeCategory`, `TimeOn`, `endTime`, `createTime`) VALUES('ceshi', ('2023-10-08T16:00:00.000Z', '2024-01-08T16:00:00.000Z'), 1, '', '周期性', '2023-10-09T00:00:00+08:00', '2024-01-09T00:00:00+08:00', '2023-10-09 16:05:37.610')
+code: "ER_NO_SUCH_TABLE"
+errno: 1146
+sqlMessage: "Table 'bigdata_period.task_list' doesn't exist"
+sqlState: "42S02"
+index: 0
+sql: "INSERT INTO `task_list`(`reportName`, `timeRange`, `periodType`, `priority`, `LargeCategory`, `TimeOn`, `endTime`, `createTime`) VALUES('ceshi', ('2023-10-08T16:00:00.000Z', '2024-01-08T16:00:00.000Z'), 1, '', '周期性', '2023-10-09T00:00:00+08:00', '2024-01-09T00:00:00+08:00', '2023-10-09 16:05:37.610')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_NO_SUCH_TABLEError"
+pid: 18896
+hostname: xjswwdeMBP
+
+2023-10-09 16:07:12,217 ERROR 18924 [-/127.0.0.1/-/34ms POST /api/report/createtask] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'timeRange' in 'field list'
+    at Sequence._packetToError (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Pool.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Pool.js:199:23)
+    at node:internal/util:360:7
+    at new Promise (<anonymous>)
+    at Pool.query (node:internal/util:346:12)
+    at RDSClient._query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/client.js:33:33)
+    at RDSClient.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:62:31)
+    at RDSClient.insert (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:159:27)
+    at /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:110:41
+    at new Promise (<anonymous>)
+    at BigDataService.createTask (/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:108:10)
+    sql: INSERT INTO `report_list`(`reportName`, `timeRange`, `periodType`, `priority`, `LargeCategory`, `TimeOn`, `endTime`, `createTime`) VALUES('ceshi', ('2023-10-08T16:00:00.000Z', '2024-01-08T16:00:00.000Z'), 1, '', '周期性', '2023-10-09T00:00:00+08:00', '2024-01-09T00:00:00+08:00', '2023-10-09 16:07:12.188')
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'timeRange' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `report_list`(`reportName`, `timeRange`, `periodType`, `priority`, `LargeCategory`, `TimeOn`, `endTime`, `createTime`) VALUES('ceshi', ('2023-10-08T16:00:00.000Z', '2024-01-08T16:00:00.000Z'), 1, '', '周期性', '2023-10-09T00:00:00+08:00', '2024-01-09T00:00:00+08:00', '2023-10-09 16:07:12.188')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 18924
+hostname: xjswwdeMBP
+
+2023-10-09 16:20:25,708 ERROR 18997 [-/127.0.0.1/-/49ms POST /api/report/addtasktype] nodejs.ER_NO_DEFAULT_FOR_FIELDError: ER_NO_DEFAULT_FOR_FIELD: Field 'reportTypeName' doesn't have a default value
+    at Sequence._packetToError (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Pool.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Pool.js:199:23)
+    at node:internal/util:360:7
+    at new Promise (<anonymous>)
+    at Pool.query (node:internal/util:346:12)
+    at RDSClient._query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/client.js:33:33)
+    at RDSClient.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:62:31)
+    at RDSClient.insert (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:159:27)
+    at /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:151:41
+    at new Promise (<anonymous>)
+    at BigDataService.createTaskType (/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:149:10)
+    sql: INSERT INTO `report_Type`(`modeName`, `createTime`) VALUES('', '2023-10-09 16:20:25.661')
+code: "ER_NO_DEFAULT_FOR_FIELD"
+errno: 1364
+sqlMessage: "Field 'reportTypeName' doesn't have a default value"
+sqlState: "HY000"
+index: 0
+sql: "INSERT INTO `report_Type`(`modeName`, `createTime`) VALUES('', '2023-10-09 16:20:25.661')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_NO_DEFAULT_FOR_FIELDError"
+pid: 18997
+hostname: xjswwdeMBP
+
+2023-10-09 16:57:53,585 ERROR 18997 [-/127.0.0.1/-/59ms POST /api/report/tasklist] nodejs.ER_NO_SUCH_TABLEError: ER_NO_SUCH_TABLE: Table 'bigdata_period.task_list' doesn't exist
+    at Sequence._packetToError (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Pool.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Pool.js:199:23)
+    at node:internal/util:360:7
+    at new Promise (<anonymous>)
+    at Pool.query (node:internal/util:346:12)
+    at RDSClient._query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/client.js:33:33)
+    at RDSClient.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:62:31)
+    at /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:134:39
+    at new Promise (<anonymous>)
+    at BigDataService.getTaskList (/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js:128:10)
+    at BigDataController.getTaskList (/Users/xujiashuang/Desktop/bigdata-server/app/controller/bigdata.js:38:40)
+    sql: select * from task_list order by createTime desc limit 0,10
+code: "ER_NO_SUCH_TABLE"
+errno: 1146
+sqlMessage: "Table 'bigdata_period.task_list' doesn't exist"
+sqlState: "42S02"
+index: 0
+sql: "select * from task_list order by createTime desc limit 0,10"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_NO_SUCH_TABLEError"
+pid: 18997
+hostname: xjswwdeMBP
+

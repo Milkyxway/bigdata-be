@@ -5,10 +5,12 @@
 import 'egg';
 import ExportBigdata = require('../../../app/controller/bigdata');
 import ExportRole = require('../../../app/controller/role');
+import ExportUpload = require('../../../app/controller/upload');
 
 declare module 'egg' {
   interface IController {
     bigdata: ExportBigdata;
     role: ExportRole;
+    upload: ExportUpload;
   }
 }

@@ -22,11 +22,14 @@ module.exports = (app) => {
 	// router.post("/api/subtask/update", controller.task.updateSubTask);
 	// router.delete("/api/subtask/delete", controller.task.deleteSubTask);
 
-	// router.post("/api/login", controller.role.login);
+	router.post("/api/login", controller.role.login);
 	// router.post("/api/modifypwd", controller.role.modifypwd);
 	// router.post("/api/createaccount", controller.role.createaccount);
 	router.post("/api/report/list", controller.bigdata.getReportList);
 	router.post("/api/report/sqllist", controller.bigdata.getSQL);
 	router.post("/api/report/download", controller.bigdata.downloadSql);
 	router.post("/api/report/upload", controller.upload.upload);
+	router.post("/api/report/createtask", controller.bigdata.createTask);
+	router.post("/api/report/tasklist", controller.bigdata.getTaskList);
+	router.post("/api/report/addtasktype", controller.bigdata.createTaskType);
 };

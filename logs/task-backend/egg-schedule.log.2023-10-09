@@ -1,0 +1,234 @@
+2023-09-13 15:08:07,462 INFO 19779 [Timer] /Users/xujiashuang/Desktop/task-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 48112539ms at 2023-09-14 04:30:00.001
+2023-09-13 15:08:07,463 INFO 19779 [Timer] /Users/xujiashuang/Desktop/task-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js next time will execute after 31912537ms at 2023-09-14 00:00:00.000
+2023-09-13 15:08:07,463 INFO 19779 [Timer] /Users/xujiashuang/Desktop/task-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 31913537ms at 2023-09-14 00:00:01.000
+2023-09-13 15:08:07,463 INFO 19779 [Timer] /Users/xujiashuang/Desktop/task-server/app/schedule/checkTaskStatus.js next time will execute after 85912537ms at 2023-09-14 15:00:00.000
+2023-09-13 15:08:07,313 INFO 19787 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/task-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-13 15:08:07,313 INFO 19787 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/task-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-13 15:08:07,313 INFO 19787 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/task-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-13 15:08:07,313 INFO 19787 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/task-server/app/schedule/checkTaskStatus.js
+2023-09-13 15:32:00,315 INFO 20913 [Timer] /Users/xujiashuang/Desktop/task-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 46679687ms at 2023-09-14 04:30:00.002
+2023-09-13 15:32:00,315 INFO 20913 [Timer] /Users/xujiashuang/Desktop/task-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js next time will execute after 30479685ms at 2023-09-14 00:00:00.000
+2023-09-13 15:32:00,315 INFO 20913 [Timer] /Users/xujiashuang/Desktop/task-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 30480685ms at 2023-09-14 00:00:01.000
+2023-09-13 15:32:00,316 INFO 20913 [Timer] /Users/xujiashuang/Desktop/task-server/app/schedule/checkTaskStatus.js next time will execute after 84479685ms at 2023-09-14 15:00:00.001
+2023-09-13 15:32:00,151 INFO 20917 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/task-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-13 15:32:00,151 INFO 20917 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/task-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-13 15:32:00,151 INFO 20917 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/task-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-13 15:32:00,151 INFO 20917 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/task-server/app/schedule/checkTaskStatus.js
+2023-09-13 15:33:36,423 INFO 21006 [Timer] /Users/xujiashuang/Desktop/task-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 46583578ms at 2023-09-14 04:30:00.001
+2023-09-13 15:33:36,424 INFO 21006 [Timer] /Users/xujiashuang/Desktop/task-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js next time will execute after 30383577ms at 2023-09-14 00:00:00.001
+2023-09-13 15:33:36,424 INFO 21006 [Timer] /Users/xujiashuang/Desktop/task-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 30384576ms at 2023-09-14 00:00:01.000
+2023-09-13 15:33:36,424 INFO 21006 [Timer] /Users/xujiashuang/Desktop/task-server/app/schedule/checkTaskStatus.js next time will execute after 84383576ms at 2023-09-14 15:00:00.000
+2023-09-13 15:33:36,273 INFO 21010 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/task-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-13 15:33:36,273 INFO 21010 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/task-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-13 15:33:36,273 INFO 21010 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/task-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-13 15:33:36,273 INFO 21010 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/task-server/app/schedule/checkTaskStatus.js
+2023-09-27 09:15:47,167 INFO 3549 [Timer] /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 69252834ms at 2023-09-28 04:30:00.001
+2023-09-27 09:15:47,167 INFO 3549 [Timer] /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js next time will execute after 53052833ms at 2023-09-28 00:00:00.000
+2023-09-27 09:15:47,168 INFO 3549 [Timer] /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 53053833ms at 2023-09-28 00:00:01.001
+2023-09-27 09:15:47,168 INFO 3549 [Timer] /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js next time will execute after 20652832ms at 2023-09-27 15:00:00.000
+2023-09-27 09:15:47,022 INFO 3558 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-27 09:15:47,022 INFO 3558 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-27 09:15:47,022 INFO 3558 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-27 09:15:47,022 INFO 3558 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-09-27 09:41:53,235 INFO 5673 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-27 09:41:53,235 INFO 5673 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-27 09:41:53,235 INFO 5673 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-27 09:41:53,235 INFO 5673 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-09-27 09:42:48,989 INFO 5703 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-27 09:42:48,989 INFO 5703 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-27 09:42:48,989 INFO 5703 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-27 09:42:48,989 INFO 5703 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-09-27 09:42:58,512 INFO 5732 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-27 09:42:58,512 INFO 5732 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-27 09:42:58,512 INFO 5732 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-27 09:42:58,512 INFO 5732 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-09-27 14:01:01,125 INFO 8481 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-27 14:01:01,125 INFO 8481 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-27 14:01:01,125 INFO 8481 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-27 14:01:01,125 INFO 8481 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-09-27 14:01:02,978 INFO 8489 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-27 14:01:02,978 INFO 8489 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-27 14:01:02,978 INFO 8489 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-27 14:01:02,978 INFO 8489 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-09-27 14:02:45,664 INFO 8529 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-27 14:02:45,664 INFO 8529 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-27 14:02:45,664 INFO 8529 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-27 14:02:45,664 INFO 8529 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-09-27 14:03:55,151 INFO 8560 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-27 14:03:55,151 INFO 8560 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-27 14:03:55,151 INFO 8560 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-27 14:03:55,151 INFO 8560 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-09-27 14:09:21,231 INFO 8694 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-27 14:09:21,231 INFO 8694 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-27 14:09:21,231 INFO 8694 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-27 14:09:21,231 INFO 8694 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-09-27 14:10:10,822 INFO 8722 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-27 14:10:10,822 INFO 8722 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-27 14:10:10,822 INFO 8722 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-27 14:10:10,822 INFO 8722 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-09-27 14:11:07,970 INFO 8741 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-27 14:11:07,970 INFO 8741 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-27 14:11:07,970 INFO 8741 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-27 14:11:07,970 INFO 8741 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-09-27 14:13:28,518 INFO 8781 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-27 14:13:28,518 INFO 8781 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-27 14:13:28,518 INFO 8781 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-27 14:13:28,518 INFO 8781 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-09-27 14:14:22,822 INFO 8849 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-27 14:14:22,822 INFO 8849 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-27 14:14:22,822 INFO 8849 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-27 14:14:22,822 INFO 8849 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-09-27 14:14:24,493 INFO 8857 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-27 14:14:24,493 INFO 8857 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-27 14:14:24,493 INFO 8857 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-27 14:14:24,493 INFO 8857 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-09-27 14:15:26,081 INFO 8888 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-27 14:15:26,081 INFO 8888 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-27 14:15:26,081 INFO 8888 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-27 14:15:26,081 INFO 8888 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-09-27 14:15:52,588 INFO 8898 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-27 14:15:52,588 INFO 8898 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-27 14:15:52,588 INFO 8898 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-27 14:15:52,588 INFO 8898 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-09-27 14:15:59,515 INFO 8908 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-27 14:15:59,515 INFO 8908 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-27 14:15:59,515 INFO 8908 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-27 14:15:59,515 INFO 8908 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-09-27 14:16:09,536 INFO 8916 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-27 14:16:09,536 INFO 8916 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-27 14:16:09,536 INFO 8916 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-27 14:16:09,536 INFO 8916 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-09-27 14:34:36,114 INFO 9483 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-27 14:34:36,114 INFO 9483 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-27 14:34:36,114 INFO 9483 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-27 14:34:36,114 INFO 9483 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-09-27 14:36:50,566 INFO 9983 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-27 14:36:50,566 INFO 9983 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-27 14:36:50,566 INFO 9983 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-27 14:36:50,566 INFO 9983 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-09-27 14:37:12,344 INFO 10006 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-27 14:37:12,344 INFO 10006 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-27 14:37:12,344 INFO 10006 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-27 14:37:12,344 INFO 10006 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-09-27 14:37:29,116 INFO 10031 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-27 14:37:29,116 INFO 10031 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-27 14:37:29,116 INFO 10031 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-27 14:37:29,116 INFO 10031 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-09-27 14:37:56,386 INFO 10044 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-27 14:37:56,386 INFO 10044 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-27 14:37:56,386 INFO 10044 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-27 14:37:56,386 INFO 10044 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-09-27 14:38:33,130 INFO 10147 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-27 14:38:33,130 INFO 10147 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-27 14:38:33,130 INFO 10147 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-27 14:38:33,130 INFO 10147 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-09-27 14:39:28,292 INFO 10178 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-09-27 14:39:28,292 INFO 10178 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-09-27 14:39:28,292 INFO 10178 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-09-27 14:39:28,292 INFO 10178 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-09-27 14:59:59,693 INFO 3549 [Timer] /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js next time will execute after 86400317ms at 2023-09-28 15:00:00.009
+2023-09-27 14:59:59,690 INFO 10178 [Job#1695797999680218736360269581] /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js executing by app
+2023-09-27 14:59:59,766 ERROR 10178 [-/127.0.0.1/-/75ms SCHEDULE /__schedule?path=/Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js&cron=0%200%2015%20*%20*%20%3F&type=worker] [Job#1695797999680218736360269581] /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js execute failed, used 66ms. Error: ER_NO_SUCH_TABLE: Table 'bigdata_period.subtask_list' doesn't exist
+    at Sequence._packetToError (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Pool.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Pool.js:199:23)
+    at node:internal/util:360:7
+    at new Promise (<anonymous>)
+    at Pool.query (node:internal/util:346:12)
+    at RDSClient._query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/client.js:33:33)
+    at RDSClient.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:62:31)
+    at RDSClient.select (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:120:27)
+    at logTime.subscribe (/Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js:40:37)
+    at Object.task (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-schedule@4.0.0@egg-schedule/lib/load_schedule.js:37:22)
+    at /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-schedule@4.0.0@egg-schedule/app.js:48:23
+    sql: SELECT * FROM `subtask_list` WHERE `status` = 3 {
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: "Table 'bigdata_period.subtask_list' doesn't exist",
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM `subtask_list` WHERE `status` = 3'
+}
+2023-10-09 10:04:31,334 INFO 12187 [Timer] /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 66328669ms at 2023-10-10 04:30:00.003
+2023-10-09 10:04:31,334 INFO 12187 [Timer] /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js next time will execute after 50128666ms at 2023-10-10 00:00:00.000
+2023-10-09 10:04:31,334 INFO 12187 [Timer] /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 50129666ms at 2023-10-10 00:00:01.000
+2023-10-09 10:04:31,334 INFO 12187 [Timer] /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js next time will execute after 17728666ms at 2023-10-09 15:00:00.000
+2023-10-09 10:04:31,174 INFO 12195 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-10-09 10:04:31,174 INFO 12195 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-10-09 10:04:31,174 INFO 12195 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-10-09 10:04:31,174 INFO 12195 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-10-09 14:59:59,883 INFO 12195 [Job#16968347998389722141966464581] /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js executing by app
+2023-10-09 14:59:59,928 ERROR 12195 [-/127.0.0.1/-/40ms SCHEDULE /__schedule?path=/Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js&cron=0%200%2015%20*%20*%20%3F&type=worker] [Job#16968347998389722141966464581] /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js execute failed, used 33ms. Error: ER_NO_SUCH_TABLE: Table 'bigdata_period.subtask_list' doesn't exist
+    at Sequence._packetToError (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Pool.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Pool.js:199:23)
+    at node:internal/util:360:7
+    at new Promise (<anonymous>)
+    at Pool.query (node:internal/util:346:12)
+    at RDSClient._query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/client.js:33:33)
+    at RDSClient.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:62:31)
+    at RDSClient.select (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:120:27)
+    at logTime.subscribe (/Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js:40:37)
+    at Object.task (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-schedule@4.0.0@egg-schedule/lib/load_schedule.js:37:22)
+    at /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-schedule@4.0.0@egg-schedule/app.js:48:23
+    sql: SELECT * FROM `subtask_list` WHERE `status` = 3 {
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: "Table 'bigdata_period.subtask_list' doesn't exist",
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM `subtask_list` WHERE `status` = 3'
+}
+2023-10-09 14:59:59,867 INFO 12187 [Timer] /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js next time will execute after 86400148ms at 2023-10-10 15:00:00.013
+2023-10-09 16:00:52,524 INFO 18679 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-10-09 16:00:52,524 INFO 18679 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-10-09 16:00:52,524 INFO 18679 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-10-09 16:00:52,524 INFO 18679 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-10-09 16:00:56,653 INFO 18695 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-10-09 16:00:56,653 INFO 18695 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-10-09 16:00:56,653 INFO 18695 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-10-09 16:00:56,653 INFO 18695 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-10-09 16:05:00,791 INFO 18885 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-10-09 16:05:00,791 INFO 18885 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-10-09 16:05:00,791 INFO 18885 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-10-09 16:05:00,791 INFO 18885 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-10-09 16:05:02,545 INFO 18896 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-10-09 16:05:02,545 INFO 18896 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-10-09 16:05:02,545 INFO 18896 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-10-09 16:05:02,545 INFO 18896 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-10-09 16:06:59,079 INFO 18924 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-10-09 16:06:59,079 INFO 18924 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-10-09 16:06:59,079 INFO 18924 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-10-09 16:06:59,079 INFO 18924 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-10-09 16:07:49,178 INFO 18997 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-10-09 16:07:49,178 INFO 18997 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-10-09 16:07:49,178 INFO 18997 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-10-09 16:07:49,178 INFO 18997 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-10-09 16:58:46,527 INFO 20984 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-10-09 16:58:46,527 INFO 20984 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-10-09 16:58:46,527 INFO 20984 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-10-09 16:58:46,527 INFO 20984 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js
+2023-10-10 00:08:00,073 INFO 20984 [Job#169686768005310050948953355001] /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js executing by app
+2023-10-10 00:08:00,088 INFO 20984 [Job#169686768007010050949092590411] /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js executing by app
+2023-10-10 00:08:00,147 INFO 20984 [-/127.0.0.1/-/63ms SCHEDULE /__schedule?path=/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js&type=worker&cron=0%200%20*%20*%20*] [Job#169686768005310050948953355001] /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js execute succeed, used 63ms. 
+2023-10-10 00:08:00,148 INFO 20984 [-/127.0.0.1/-/60ms SCHEDULE /__schedule?path=/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js&type=worker&cron=1%200%200%20*%20*%20*] [Job#169686768007010050949092590411] /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js execute succeed, used 60ms. 
+2023-10-10 00:08:00,066 INFO 12187 [Timer] /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js next time will execute after 85919940ms at 2023-10-11 00:00:00.006
+2023-10-10 00:08:00,073 INFO 12187 [Timer] /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 85920929ms at 2023-10-11 00:00:01.002

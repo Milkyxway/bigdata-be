@@ -36,23 +36,6 @@ class BigDataService extends Service {
 		});
 	}
 
-	downloadSql() {
-		return new Promise((resolve, reject) => {
-			const ftp = require("ftp");
-			const client = new ftp();
-			client.on("ready", function () {
-				client.get("客户明细.sql", (err, file) => {
-					resolve(file);
-				});
-			});
-
-			client.connect({
-				host: "172.16.179.5",
-				user: "htgl",
-				password: "zaSFW5AfrerDm6eD",
-			});
-		});
-	}
 	uploadSql() {
 		return new Promise((resolve, reject) => {
 			const ftp = require("ftp");
@@ -113,6 +96,68 @@ class BigDataService extends Service {
 				list,
 				total,
 			});
+		});
+	}
+
+	/**
+	 * 创建任务
+	 * @param {*} query
+	 * @returns
+	 */
+	createTask(query) {
+		return new Promise(async (resolve, reject) => {
+			try {
+				const result = await this.app.mysql.insert("report_list", {
+					...query,
+					createTime: new Date(),
+				});
+				resolve({
+					taskId: result.insertId,
+				});
+			} catch (e) {
+				reject(e);
+			}
+		});
+	}
+
+	/**
+	 * 获取任务列表
+	 * @returns
+	 */
+	getTaskList(query) {
+		return new Promise(async (resolve, reject) => {
+			try {
+				const { pageNum, pageSize } = query;
+				const sqlStr = `select * from report_list order by createTime desc limit ${
+					pageNum * pageSize
+				},${pageSize}`;
+				const list = await this.app.mysql.query(sqlStr);
+				const [{ "COUNT(*)": total }] = await this.app.mysql.query(
+					`SELECT COUNT(*) from report_list `
+				);
+				resolve({
+					list,
+					total,
+				});
+			} catch (e) {
+				reject(e);
+			}
+		});
+	}
+
+	createTaskType(query) {
+		return new Promise(async (resolve, reject) => {
+			try {
+				const result = await this.app.mysql.insert("report_Type", {
+					...query,
+					createTime: new Date(),
+				});
+				resolve({
+					reportTypeId: result.insertId,
+				});
+			} catch (e) {
+				reject(e);
+			}
 		});
 	}
 }

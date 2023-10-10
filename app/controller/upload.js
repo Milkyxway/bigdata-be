@@ -27,7 +27,7 @@ class UploadController extends Controller {
 			fs.writeFileSync(uploadDir, f);
 			await this.app.mysql.insert("sql_Data", {
 				sqlName: file.filename,
-				sqlLink: `http://127.0.0.1:7001${uploadDir.replace(/app/, "")}`,
+				sqlLink: `http://127.0.0.1:7002${uploadDir.replace(/app/, "")}`,
 				createTime: new Date(),
 			});
 		} finally {

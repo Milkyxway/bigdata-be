@@ -1,0 +1,256 @@
+2023-10-10 00:25:54,930 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 1074853ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 00:41:08,948 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 913926ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 00:58:03,959 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 1014928ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 01:11:30,943 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 806950ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 01:27:58,891 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 987946ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 01:33:53,929 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 355034ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 02:06:25,149 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 956639ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 02:23:25,156 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 1020002ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 02:39:28,166 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 963008ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 02:57:28,140 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 1079973ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 03:12:34,163 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 906020ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 03:30:29,149 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 1074984ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 03:46:40,127 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 970975ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 04:03:47,082 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 1026951ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 04:20:15,057 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 987966ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 04:38:15,090 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 1080021ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 04:56:07,085 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 1071973ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 05:12:42,161 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 995074ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 05:29:44,127 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 1021959ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 05:46:31,171 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 1007038ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 06:03:37,171 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 1025993ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 06:19:04,092 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 926912ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 06:35:01,194 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 957095ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 06:51:43,853 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 1002655ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 07:07:39,842 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 955986ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 07:24:55,792 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 1035949ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 07:41:09,818 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 974023ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 07:57:49,849 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 1000028ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 08:12:56,872 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 907022ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 08:45:56,849 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 1070983ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 08:49:03,819 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 186965ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+
+2023-10-10 08:50:07,337 ERROR 12187 nodejs.ClusterClientNoResponseError: client no response in 63514ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 12187
+hostname: xjswwdeMBP
+

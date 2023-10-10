@@ -76,6 +76,7 @@ module.exports = (appInfo) => {
 	const userConfig = {
 		// myAppName: 'egg',
 		uploadDir: "app/public/upload",
+		uploadReport: "app/public/report",
 	};
 	config.multipart = {
 		mode: "file",

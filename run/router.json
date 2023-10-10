@@ -5,8 +5,92 @@
       "POST"
     ],
     "paramNames": [],
-    "path": "/api/bigdata/reportlist",
-    "regexp": "/^\\/api\\/bigdata\\/reportlist(?:\\/(?=$))?$/",
+    "path": "/api/login",
+    "regexp": "/^\\/api\\/login(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/report/list",
+    "regexp": "/^\\/api\\/report\\/list(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/report/sqllist",
+    "regexp": "/^\\/api\\/report\\/sqllist(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/report/download",
+    "regexp": "/^\\/api\\/report\\/download(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/report/upload",
+    "regexp": "/^\\/api\\/report\\/upload(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/report/createtask",
+    "regexp": "/^\\/api\\/report\\/createtask(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/report/tasklist",
+    "regexp": "/^\\/api\\/report\\/tasklist(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/report/addtasktype",
+    "regexp": "/^\\/api\\/report\\/addtasktype(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
