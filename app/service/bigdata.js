@@ -112,7 +112,7 @@ class BigDataService extends Service {
 					createTime: new Date(),
 				});
 				resolve({
-					taskId: result.insertId,
+					reportId: result.insertId,
 				});
 			} catch (e) {
 				reject(e);
@@ -145,6 +145,11 @@ class BigDataService extends Service {
 		});
 	}
 
+	/**
+	 * 创建任务类型
+	 * @param {*} query
+	 * @returns
+	 */
 	createTaskType(query) {
 		return new Promise(async (resolve, reject) => {
 			try {
@@ -158,6 +163,77 @@ class BigDataService extends Service {
 			} catch (e) {
 				reject(e);
 			}
+		});
+	}
+
+	/**
+	 * 增加sql语句
+	 * @param {*} data
+	 * @returns
+	 */
+	addSql(data) {
+		return new Promise(async (resolve, reject) => {
+			try {
+				if (!data.reportId) {
+					reject("没有任务id");
+				} else {
+					const result = await this.app.mysql.insert("report_sql", {
+						...data,
+						createTime: new Date(),
+					});
+					resolve({
+						result,
+					});
+				}
+			} catch (e) {
+				reject(e);
+			}
+		});
+	}
+
+	/**
+	 * 获取任务详情
+	 * @param {*} query
+	 * @returns
+	 */
+	getTaskDetail(query) {
+		return new Promise(async (resolve, reject) => {
+			try {
+				const detail = await this.app.mysql.select("report_list", {
+					where: {
+						reportId: query.taskId,
+					},
+				});
+				if (detail) {
+					resolve(detail[0]);
+				} else {
+					reject();
+				}
+			} catch (e) {
+				reject(e);
+			}
+		});
+	}
+
+	/**
+	 * 获取任务类型
+	 * @param {*} query
+	 * @returns
+	 */
+	getReportType(query) {
+		return new Promise(async (resolve, reject) => {
+			try {
+				const result = await this.app.mysql.select("report_Type", {
+					where: {
+						reportTypeId: query.reportTypeId,
+					},
+				});
+				if (result) {
+					resolve(result[0]);
+				} else {
+					reject();
+				}
+			} catch (e) {}
 		});
 	}
 }
