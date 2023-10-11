@@ -35,4 +35,5 @@ module.exports = (app) => {
 	router.post("/api/report/addsql", controller.bigdata.addSql);
 	router.post("/api/report/detail", controller.bigdata.getTaskDetail);
 	router.post("/api/report/type", controller.bigdata.getReportType);
+	router.post("/api/report/update", controller.bigdata.updateTask);
 };

@@ -110,6 +110,7 @@ class BigDataService extends Service {
 				const result = await this.app.mysql.insert("report_list", {
 					...query,
 					createTime: new Date(),
+					reportState: 0,
 				});
 				resolve({
 					reportId: result.insertId,
@@ -155,6 +156,7 @@ class BigDataService extends Service {
 			try {
 				const result = await this.app.mysql.insert("report_Type", {
 					...query,
+
 					createTime: new Date(),
 				});
 				resolve({
@@ -233,6 +235,23 @@ class BigDataService extends Service {
 				} else {
 					reject();
 				}
+			} catch (e) {}
+		});
+	}
+
+	/**
+	 * 更新任务
+	 * @param {*} data
+	 * @returns
+	 */
+	updateTask(data) {
+		return new Promise(async (resolve, reject) => {
+			try {
+				await this.app.mysql.update("report_list", data, {
+					where: {
+						reportId: data.reportId,
+					},
+				});
 			} catch (e) {}
 		});
 	}
