@@ -128,7 +128,7 @@ class BigDataService extends Service {
 	getTaskList(query) {
 		return new Promise(async (resolve, reject) => {
 			try {
-				const { pageNum, pageSize } = query;
+				const { pageNum, pageSize, ...rest } = query;
 				const sqlStr = `select * from report_list order by createTime desc limit ${
 					pageNum * pageSize
 				},${pageSize}`;
@@ -235,7 +235,9 @@ class BigDataService extends Service {
 				} else {
 					reject();
 				}
-			} catch (e) {}
+			} catch (e) {
+				reject(e);
+			}
 		});
 	}
 
@@ -253,7 +255,49 @@ class BigDataService extends Service {
 					},
 				});
 				resolve();
-			} catch (e) {}
+			} catch (e) {
+				reject(e);
+			}
+		});
+	}
+
+	/**
+	 * 获取任务的sql语句
+	 * @param {*} query
+	 * @returns
+	 */
+	getTaskSqls(query) {
+		return new Promise(async (resolve, reject) => {
+			try {
+				const result = await this.app.mysql.select("report_sql", {
+					where: {
+						reportId: query.taskId,
+					},
+				});
+				resolve({
+					taskSqls: result.length ? result : null,
+				});
+			} catch (e) {
+				reject(e);
+			}
+		});
+	}
+
+	/**
+	 * 删除一条任务
+	 * @param {*} query
+	 * @returns
+	 */
+	deleteTask(query) {
+		return new Promise(async (resolve, reject) => {
+			try {
+				await this.app.mysql.delete("report_list", {
+					reportId: query.reportId,
+				});
+				resolve();
+			} catch (e) {
+				reject(e);
+			}
 		});
 	}
 }
