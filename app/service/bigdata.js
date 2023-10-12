@@ -252,6 +252,7 @@ class BigDataService extends Service {
 						reportId: data.reportId,
 					},
 				});
+				resolve();
 			} catch (e) {}
 		});
 	}
