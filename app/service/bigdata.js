@@ -85,11 +85,11 @@ class BigDataService extends Service {
 		// 	});
 		// });
 		return new Promise(async (resolve, reject) => {
-			const sqlStr = `select * from sql_Data ${whereStr} order by createTime desc limit ${
+			const sqlStr = `select * from common_sql ${whereStr} order by createTime desc limit ${
 				pageNum * pageSize
 			},${pageSize}`;
 			const [{ "COUNT(*)": total }] = await this.app.mysql.query(
-				`SELECT COUNT(*) from sql_Data ${whereStr}`
+				`SELECT COUNT(*) from common_sql ${whereStr}`
 			);
 			const list = await this.app.mysql.query(sqlStr);
 			resolve({
@@ -120,6 +120,41 @@ class BigDataService extends Service {
 			}
 		});
 	}
+	isEmptyObj(obj) {
+		for (let key in obj) {
+			if (key) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	handleQueryToSqlStr(rest, reportName) {
+		let notEmptyParams = {};
+		let whereStr = "";
+		Object.keys(rest).map((i) => {
+			if (rest[i] !== "") {
+				notEmptyParams[i] = rest[i];
+			}
+		});
+		Object.keys(notEmptyParams).map((i, index) => {
+			if (index !== 0) {
+				whereStr = whereStr + ` && ${i} = '${notEmptyParams[i]}'`;
+			} else {
+				whereStr = `WHERE ${i} = '${notEmptyParams[i]}'`;
+			}
+		});
+		const commonSql = (key, val) => {
+			return this.isEmptyObj(notEmptyParams)
+				? `where ${key} like '%${val}%'`
+				: `${whereStr} and ${key} like '%${val}%'`;
+		};
+
+		if (reportName) {
+			whereStr = commonSql("reportName", reportName);
+		}
+		return whereStr;
+	}
 
 	/**
 	 * 获取任务列表
@@ -128,13 +163,14 @@ class BigDataService extends Service {
 	getTaskList(query) {
 		return new Promise(async (resolve, reject) => {
 			try {
-				const { pageNum, pageSize, ...rest } = query;
-				const sqlStr = `select * from report_list order by createTime desc limit ${
+				const { pageNum, pageSize, reportName, ...rest } = query;
+				let whereStr = this.handleQueryToSqlStr(rest, reportName);
+				const sqlStr = `select * from report_list ${whereStr} order by createTime desc limit ${
 					pageNum * pageSize
 				},${pageSize}`;
 				const list = await this.app.mysql.query(sqlStr);
 				const [{ "COUNT(*)": total }] = await this.app.mysql.query(
-					`SELECT COUNT(*) from report_list `
+					`SELECT COUNT(*) from report_list ${whereStr}`
 				);
 				resolve({
 					list,
@@ -293,6 +329,53 @@ class BigDataService extends Service {
 			try {
 				await this.app.mysql.delete("report_list", {
 					reportId: query.reportId,
+				});
+				resolve();
+			} catch (e) {
+				reject(e);
+			}
+		});
+	}
+
+	addCommonSQL(data) {
+		return new Promise(async (resolve, reject) => {
+			try {
+				await this.app.mysql.insert("common_sql", data);
+				resolve();
+			} catch (e) {
+				reject(e);
+			}
+		});
+	}
+
+	/**
+	 * 删除常用sql
+	 * @returns
+	 */
+	deleteCommonSql(query) {
+		return new Promise(async (resolve, reject) => {
+			try {
+				await this.app.mysql.delete("common_sql", {
+					sqlId: query.sqlId,
+				});
+				resolve();
+			} catch (e) {
+				reject(e);
+			}
+		});
+	}
+
+	/**
+	 * 更新常用sql
+	 * @returns
+	 */
+	updateCommonsql(data) {
+		return new Promise(async (resolve, reject) => {
+			try {
+				await this.app.mysql.update("common_sql", data, {
+					where: {
+						sqlId: data.sqlId,
+					},
 				});
 				resolve();
 			} catch (e) {

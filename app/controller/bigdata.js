@@ -103,6 +103,34 @@ class BigDataController extends Controller {
 			return ctx.sendError(e);
 		}
 	}
+	async addCommonSQL() {
+		const { ctx, service } = this;
+		try {
+			const result = await service.bigdata.addCommonSQL(ctx.request.body);
+			return ctx.sendSuccess(result);
+		} catch (e) {
+			return ctx.sendError(e);
+		}
+	}
+
+	async deleteCommonSql() {
+		const { ctx, service } = this;
+		try {
+			const result = await service.bigdata.deleteCommonSql(ctx.request.body);
+			return ctx.sendSuccess(result);
+		} catch (e) {
+			return ctx.sendError(e);
+		}
+	}
+	async updateCommonsql() {
+		const { ctx, service } = this;
+		try {
+			const result = await service.bigdata.updateCommonsql(ctx.request.body);
+			return ctx.sendSuccess(result);
+		} catch (e) {
+			return ctx.sendError(e);
+		}
+	}
 }
 
 module.exports = BigDataController;
