@@ -85,9 +85,7 @@ class BigDataService extends Service {
 		// 	});
 		// });
 		return new Promise(async (resolve, reject) => {
-			const sqlStr = `select * from common_sql ${whereStr} order by createTime desc limit ${
-				pageNum * pageSize
-			},${pageSize}`;
+			const sqlStr = `select * from common_sql ${whereStr} order by createTime desc`;
 			const [{ "COUNT(*)": total }] = await this.app.mysql.query(
 				`SELECT COUNT(*) from common_sql ${whereStr}`
 			);
@@ -377,6 +375,44 @@ class BigDataService extends Service {
 						sqlId: data.sqlId,
 					},
 				});
+				resolve();
+			} catch (e) {
+				reject(e);
+			}
+		});
+	}
+
+	/**
+	 * 参数表
+	 * @returns
+	 */
+	getParamsList() {
+		return new Promise(async (resolve, reject) => {
+			try {
+				const sqlStr = `select * from report_parameter`;
+				const result = await this.app.mysql.query(sqlStr);
+				const [{ "COUNT(*)": total }] = await this.app.mysql.query(
+					`SELECT COUNT(*) from report_parameter`
+				);
+				resolve({
+					list: result,
+					total,
+				});
+			} catch (e) {
+				reject(e);
+			}
+		});
+	}
+
+	/**
+	 * 增加参数类型
+	 * @param {*} data
+	 * @returns
+	 */
+	addParams(data) {
+		return new Promise(async (resolve, reject) => {
+			try {
+				await this.app.mysql.insert("report_parameter", data);
 				resolve();
 			} catch (e) {
 				reject(e);

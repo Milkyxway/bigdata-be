@@ -38,6 +38,9 @@ module.exports = (app) => {
 	router.post("/api/report/update", controller.bigdata.updateTask);
 	router.post("/api/report/tasksqls", controller.bigdata.getTaskSqls);
 	router.delete("/api/report/deletetask", controller.bigdata.deleteTask);
+	router.post("/api/report/paramslist", controller.bigdata.getParamsList);
+	router.post("/api/report/addparams", controller.bigdata.addParams);
+
 	router.post("/api/commonsql/add", controller.bigdata.addCommonSQL);
 	router.post("/api/commonsql/list", controller.bigdata.getSQL);
 	router.post("/api/commonsql/update", controller.bigdata.updateCommonsql);

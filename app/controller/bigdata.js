@@ -131,6 +131,24 @@ class BigDataController extends Controller {
 			return ctx.sendError(e);
 		}
 	}
+
+	async getParamsList() {
+		try {
+			const result = await service.bigdata.getParamsList(ctx.request.body);
+			return ctx.sendSuccess(result);
+		} catch (e) {
+			return ctx.sendError(e);
+		}
+	}
+
+	async addParams() {
+		try {
+			const result = await service.bigdata.addParams(ctx.request.body);
+			return ctx.sendSuccess(result);
+		} catch (e) {
+			return ctx.sendError(e);
+		}
+	}
 }
 
 module.exports = BigDataController;
