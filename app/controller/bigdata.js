@@ -133,6 +133,7 @@ class BigDataController extends Controller {
 	}
 
 	async getParamsList() {
+		const { ctx, service } = this;
 		try {
 			const result = await service.bigdata.getParamsList(ctx.request.body);
 			return ctx.sendSuccess(result);
@@ -142,6 +143,7 @@ class BigDataController extends Controller {
 	}
 
 	async addParams() {
+		const { ctx, service } = this;
 		try {
 			const result = await service.bigdata.addParams(ctx.request.body);
 			return ctx.sendSuccess(result);
