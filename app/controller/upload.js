@@ -25,11 +25,6 @@ class UploadController extends Controller {
 			uploadDir = path.join(dir, file.filename);
 			// 8 将图片内容写入到文件夹下
 			fs.writeFileSync(uploadDir, f);
-			await this.app.mysql.insert("sql_Data", {
-				sqlName: file.filename,
-				sqlLink: `http://127.0.0.1:7002${uploadDir.replace(/app/, "")}`,
-				createTime: new Date(),
-			});
 		} finally {
 			// 清除临时文件
 			ctx.cleanupRequestFiles();

@@ -419,6 +419,24 @@ class BigDataService extends Service {
 			}
 		});
 	}
+
+	/**
+	 * 更新任务的sql
+	 */
+	updateTaskSql(data) {
+		return new Promise(async (resolve, reject) => {
+			try {
+				await this.app.mysql.update("report_sql", data, {
+					where: {
+						reportSqlId: data.reportSqlId,
+					},
+				});
+				resolve();
+			} catch (e) {
+				reject(e);
+			}
+		});
+	}
 }
 
 module.exports = BigDataService;

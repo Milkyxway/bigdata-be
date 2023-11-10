@@ -33,6 +33,7 @@ module.exports = (app) => {
 	router.post("/api/report/tasklist", controller.bigdata.getTaskList);
 	router.post("/api/report/addtasktype", controller.bigdata.createTaskType);
 	router.post("/api/report/addsql", controller.bigdata.addSql);
+	router.post("/api/report/updatesql", controller.bigdata.updateTaskSql);
 	router.post("/api/report/detail", controller.bigdata.getTaskDetail);
 	router.post("/api/report/type", controller.bigdata.getReportType);
 	router.post("/api/report/update", controller.bigdata.updateTask);
