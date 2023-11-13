@@ -28,7 +28,7 @@ module.exports = (app) => {
 	router.post("/api/report/list", controller.bigdata.getReportList);
 
 	router.post("/api/report/download", controller.bigdata.downloadSql);
-	router.post("/api/report/upload", controller.upload.upload);
+
 	router.post("/api/report/createtask", controller.bigdata.createTask);
 	router.post("/api/report/tasklist", controller.bigdata.getTaskList);
 	router.post("/api/report/addtasktype", controller.bigdata.createTaskType);
@@ -46,4 +46,7 @@ module.exports = (app) => {
 	router.post("/api/commonsql/list", controller.bigdata.getSQL);
 	router.post("/api/commonsql/update", controller.bigdata.updateCommonsql);
 	router.delete("/api/commonsql/delete", controller.bigdata.deleteCommonSql);
+
+	router.post("/api/report/upload", controller.upload.upload);
+	router.post("/api/report/deletefile", controller.upload.deleteFile);
 };

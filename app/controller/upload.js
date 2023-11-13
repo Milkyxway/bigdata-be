@@ -18,7 +18,7 @@ class UploadController extends Controller {
 			// 4 获取当前日期
 			let day = moment(new Date()).format("YYYYMMDD");
 			// 5 生成文件最后要保存的路径地址
-			let dir = path.join(this.config.uploadDir, day);
+			let dir = path.join(this.config.uploadDir);
 
 			await mkdirp(dir); // 6 这个方法是，如果 上述dir 路径存在，那就不创建，如果不存在则会创建这个对应目录文件夹
 			// 7 返回图片保存的完整路径
@@ -32,6 +32,17 @@ class UploadController extends Controller {
 		return ctx.sendSuccess({
 			data: uploadDir.replace(/app/, ""), // 删除 /app/ 这个目录
 		});
+	}
+
+	deleteFile() {
+		const { ctx } = this;
+		try {
+			const { request } = ctx;
+			fs.unlink(`../public/upload/${request.fileName}`);
+			return ctx.sendSuccess();
+		} catch (e) {
+			return ctx.sendError(e);
+		}
 	}
 }
 

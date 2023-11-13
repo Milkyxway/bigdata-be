@@ -39,9 +39,9 @@ module.exports = (appInfo) => {
 	// 		// port
 	// 		port: "3306",
 	// 		// username
-	// 		user: "bigdata_period",
+	// 		user: "root",
 	// 		// password
-	// 		password: "LxAcfec3kFf6SbYH",
+	// 		password: "11111111",
 	// 		// database
 	// 		database: "bigdata_period",
 	// 	},
