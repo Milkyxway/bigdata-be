@@ -17,6 +17,18 @@
       "POST"
     ],
     "paramNames": [],
+    "path": "/api/createaccount",
+    "regexp": "/^\\/api\\/createaccount(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
     "path": "/api/report/list",
     "regexp": "/^\\/api\\/report\\/list(?:\\/(?=$))?$/",
     "stack": [
@@ -29,32 +41,8 @@
       "POST"
     ],
     "paramNames": [],
-    "path": "/api/report/sqllist",
-    "regexp": "/^\\/api\\/report\\/sqllist(?:\\/(?=$))?$/",
-    "stack": [
-      "wrappedController"
-    ]
-  },
-  {
-    "name": null,
-    "methods": [
-      "POST"
-    ],
-    "paramNames": [],
     "path": "/api/report/download",
     "regexp": "/^\\/api\\/report\\/download(?:\\/(?=$))?$/",
-    "stack": [
-      "wrappedController"
-    ]
-  },
-  {
-    "name": null,
-    "methods": [
-      "POST"
-    ],
-    "paramNames": [],
-    "path": "/api/report/upload",
-    "regexp": "/^\\/api\\/report\\/upload(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -101,8 +89,32 @@
       "POST"
     ],
     "paramNames": [],
+    "path": "/api/report/deletetype",
+    "regexp": "/^\\/api\\/report\\/deletetype(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
     "path": "/api/report/addsql",
     "regexp": "/^\\/api\\/report\\/addsql(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/report/updatesql",
+    "regexp": "/^\\/api\\/report\\/updatesql(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -163,6 +175,102 @@
     "paramNames": [],
     "path": "/api/report/deletetask",
     "regexp": "/^\\/api\\/report\\/deletetask(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/report/paramslist",
+    "regexp": "/^\\/api\\/report\\/paramslist(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/report/addparams",
+    "regexp": "/^\\/api\\/report\\/addparams(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/commonsql/add",
+    "regexp": "/^\\/api\\/commonsql\\/add(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/commonsql/list",
+    "regexp": "/^\\/api\\/commonsql\\/list(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/commonsql/update",
+    "regexp": "/^\\/api\\/commonsql\\/update(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "DELETE"
+    ],
+    "paramNames": [],
+    "path": "/api/commonsql/delete",
+    "regexp": "/^\\/api\\/commonsql\\/delete(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/report/upload",
+    "regexp": "/^\\/api\\/report\\/upload(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/report/deletefile",
+    "regexp": "/^\\/api\\/report\\/deletefile(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

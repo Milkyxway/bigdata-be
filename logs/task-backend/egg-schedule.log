@@ -133,3 +133,7 @@
   sql: 'SELECT * FROM `subtask_list` WHERE `status` = 3'
 }
 2023-10-10 14:59:59,696 INFO 22795 [Timer] /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js next time will execute after 86400317ms at 2023-10-11 15:00:00.013
+2023-11-13 15:12:14,752 INFO 32121 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart/app/schedule/clean_tmpdir.js
+2023-11-13 15:12:14,752 INFO 32121 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/clean_log.js
+2023-11-13 15:12:14,752 INFO 32121 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/schedule/rotate_by_file.js
+2023-11-13 15:12:14,752 INFO 32121 [egg-schedule]: register schedule /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js

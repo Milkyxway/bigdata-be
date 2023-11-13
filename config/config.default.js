@@ -17,35 +17,35 @@ module.exports = (appInfo) => {
 
 	// add your middleware config here
 	config.middleware = [];
-	config.mysql = {
-		// database configuration
-		client: {
-			host: "localhost",
-			// port
-			port: "3306",
-			// username
-			user: "bigdata_period",
-			// password
-			password: "fzDJDjDtm8HiGyHa",
-			// database
-			database: "bigdata_period",
-		},
-	};
 	// config.mysql = {
 	// 	// database configuration
 	// 	client: {
-	// 		// host
 	// 		host: "localhost",
 	// 		// port
 	// 		port: "3306",
 	// 		// username
-	// 		user: "root",
+	// 		user: "bigdata_period",
 	// 		// password
-	// 		password: "11111111",
+	// 		password: "fzDJDjDtm8HiGyHa",
 	// 		// database
 	// 		database: "bigdata_period",
 	// 	},
 	// };
+	config.mysql = {
+		// database configuration
+		client: {
+			// host
+			host: "localhost",
+			// port
+			port: "3306",
+			// username
+			user: "root",
+			// password
+			password: "11111111",
+			// database
+			database: "bigdata_period",
+		},
+	};
 	// 前端端口，跟随实际情况修改
 	const port = 9001;
 	const domainWhiteList = [

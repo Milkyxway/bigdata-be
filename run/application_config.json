@@ -120,7 +120,7 @@
         "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-view@2.1.4@egg-view/config/locales",
         "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-mysql@4.0.0@egg-mysql/config/locales",
         "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-cors@2.2.3@egg-cors/config/locales",
-        "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg@3.17.4@egg/config/locales",
+        "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg@3.17.5@egg/config/locales",
         "/Users/xujiashuang/Desktop/bigdata-server/config/locales"
       ],
       "queryField": "locale",
@@ -408,7 +408,7 @@
         "jsonp"
       ],
       "env": [],
-      "from": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg@3.17.4@egg/config/plugin.js",
+      "from": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg@3.17.5@egg/config/plugin.js",
       "path": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-onerror@2.2.0@egg-onerror",
       "version": "2.2.0"
     },
@@ -419,7 +419,7 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg@3.17.4@egg/config/plugin.js",
+      "from": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg@3.17.5@egg/config/plugin.js",
       "path": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-session@3.3.0@egg-session",
       "version": "3.3.0"
     },
@@ -430,7 +430,7 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg@3.17.4@egg/config/plugin.js",
+      "from": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg@3.17.5@egg/config/plugin.js",
       "path": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-i18n@2.1.1@egg-i18n",
       "version": "2.1.1"
     },
@@ -441,7 +441,7 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg@3.17.4@egg/config/plugin.js",
+      "from": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg@3.17.5@egg/config/plugin.js",
       "path": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-watcher@3.1.1@egg-watcher",
       "version": "3.1.1",
       "dependents": [
@@ -457,7 +457,7 @@
         "schedule"
       ],
       "env": [],
-      "from": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg@3.17.4@egg/config/plugin.js",
+      "from": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg@3.17.5@egg/config/plugin.js",
       "path": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-multipart@3.3.0@egg-multipart",
       "version": "3.3.0"
     },
@@ -470,7 +470,7 @@
         "session"
       ],
       "env": [],
-      "from": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg@3.17.4@egg/config/plugin.js",
+      "from": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg@3.17.5@egg/config/plugin.js",
       "path": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-security@3.1.0@egg-security",
       "version": "3.1.0"
     },
@@ -485,7 +485,7 @@
       "env": [
         "local"
       ],
-      "from": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg@3.17.4@egg/config/plugin.js",
+      "from": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg@3.17.5@egg/config/plugin.js",
       "path": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-development@2.7.0@egg-development",
       "version": "2.7.0"
     },
@@ -498,7 +498,7 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg@3.17.4@egg/config/plugin.js",
+      "from": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg@3.17.5@egg/config/plugin.js",
       "path": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-logrotator@3.1.0@egg-logrotator",
       "version": "3.1.0"
     },
@@ -509,7 +509,7 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg@3.17.4@egg/config/plugin.js",
+      "from": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg@3.17.5@egg/config/plugin.js",
       "path": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-schedule@4.0.0@egg-schedule",
       "version": "4.0.0",
       "dependents": [
@@ -523,7 +523,7 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg@3.17.4@egg/config/plugin.js",
+      "from": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg@3.17.5@egg/config/plugin.js",
       "path": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-static@2.3.1@egg-static",
       "version": "2.3.1"
     },
@@ -536,7 +536,7 @@
         "security"
       ],
       "env": [],
-      "from": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg@3.17.4@egg/config/plugin.js",
+      "from": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg@3.17.5@egg/config/plugin.js",
       "path": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-jsonp@2.0.0@egg-jsonp",
       "version": "2.0.0"
     },
@@ -547,7 +547,7 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg@3.17.4@egg/config/plugin.js",
+      "from": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg@3.17.5@egg/config/plugin.js",
       "path": "/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-view@2.1.4@egg-view",
       "version": "2.1.4"
     },

@@ -328,6 +328,10 @@ class BigDataService extends Service {
 				await this.app.mysql.delete("report_list", {
 					reportId: query.reportId,
 				});
+				// 删掉任务关联的sql
+				await this.app.mysql.delete("report_sql", {
+					reportId: query.reportId,
+				});
 				resolve();
 			} catch (e) {
 				reject(e);
@@ -430,6 +434,24 @@ class BigDataService extends Service {
 					where: {
 						reportSqlId: data.reportSqlId,
 					},
+				});
+				resolve();
+			} catch (e) {
+				reject(e);
+			}
+		});
+	}
+
+	/**
+	 * 删除任务类型
+	 * @param {*} data
+	 * @returns
+	 */
+	deleteTaskType(data) {
+		return new Promise(async (resolve, reject) => {
+			try {
+				await this.app.mysql.delete("report_type", {
+					reportTypeId: data.reportTypeId,
 				});
 				resolve();
 			} catch (e) {
