@@ -81,6 +81,45 @@ class RoleService extends Service {
 			}
 		});
 	}
+
+	getUsers() {
+		return new Promise(async (resolve, reject) => {
+			try {
+				const result = await this.app.mysql.select("user");
+				resolve({
+					list: result,
+				});
+			} catch (e) {
+				reject(e);
+			}
+		});
+	}
+
+	deleteUser(query) {
+		return new Promise(async (resolve, reject) => {
+			try {
+				await this.app.mysql.delete("user", {
+					userId: query.userId,
+				});
+				resolve();
+			} catch (e) {
+				reject(e);
+			}
+		});
+	}
+
+	updateUser(query) {
+		return new Promise(async (resolve, reject) => {
+			try {
+				await this.app.mysql.update("user", query, {
+					where: { userId: query.userId },
+				});
+				resolve();
+			} catch (e) {
+				reject(e);
+			}
+		});
+	}
 }
 
 module.exports = RoleService;

@@ -325,11 +325,11 @@ class BigDataService extends Service {
 	deleteTask(query) {
 		return new Promise(async (resolve, reject) => {
 			try {
-				await this.app.mysql.delete("report_list", {
-					reportId: query.reportId,
-				});
 				// 删掉任务关联的sql
 				await this.app.mysql.delete("report_sql", {
+					reportId: query.reportId,
+				});
+				await this.app.mysql.delete("report_list", {
 					reportId: query.reportId,
 				});
 				resolve();
@@ -452,6 +452,23 @@ class BigDataService extends Service {
 			try {
 				await this.app.mysql.delete("report_type", {
 					reportTypeId: data.reportTypeId,
+				});
+				resolve();
+			} catch (e) {
+				reject(e);
+			}
+		});
+	}
+
+	/**
+	 * 删除任务填写的sql
+	 * @param {*} data
+	 */
+	deletSQLinTask(data) {
+		return new Promise(async (resolve, reject) => {
+			try {
+				await this.app.mysql.delete("report_sql", {
+					reportSqlId: data.reportSqlId,
 				});
 				resolve();
 			} catch (e) {

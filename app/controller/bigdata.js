@@ -171,6 +171,16 @@ class BigDataController extends Controller {
 			return ctx.sendError(e);
 		}
 	}
+
+	async deletSQLinTask() {
+		const { ctx, service } = this;
+		try {
+			const result = await service.bigdata.deletSQLinTask(ctx.request.body);
+			return ctx.sendSuccess(result);
+		} catch (e) {
+			return ctx.sendError(e);
+		}
+	}
 }
 
 module.exports = BigDataController;
