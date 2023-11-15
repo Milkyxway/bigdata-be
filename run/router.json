@@ -29,6 +29,42 @@
       "POST"
     ],
     "paramNames": [],
+    "path": "/api/userupdate",
+    "regexp": "/^\\/api\\/userupdate(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/userdelete",
+    "regexp": "/^\\/api\\/userdelete(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/userlist",
+    "regexp": "/^\\/api\\/userlist(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
     "path": "/api/report/list",
     "regexp": "/^\\/api\\/report\\/list(?:\\/(?=$))?$/",
     "stack": [
@@ -163,6 +199,18 @@
     "paramNames": [],
     "path": "/api/report/tasksqls",
     "regexp": "/^\\/api\\/report\\/tasksqls(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/report/deletesql",
+    "regexp": "/^\\/api\\/report\\/deletesql(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

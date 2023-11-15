@@ -38,7 +38,9 @@ class UploadController extends Controller {
 		const { ctx } = this;
 		try {
 			const { request } = ctx;
-			fs.unlink(`../public/upload/${request.fileName}`);
+			fs.unlinkSync(
+				`${path.resolve()}/app/public/upload/${request.body.fileName}`
+			);
 			return ctx.sendSuccess();
 		} catch (e) {
 			return ctx.sendError(e);
