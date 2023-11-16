@@ -667,3 +667,252 @@ hostname: xjswwdeMBP
 2023-11-15 16:35:43,312 WARN 24966 [agent:development] reload worker because /Users/xujiashuang/Desktop/bigdata-server/app/controller/upload.js change
 2023-11-15 16:35:43,110 INFO 24966 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/xujiashuang/Desktop/bigdata-server/app/controller/upload.js","stat":{"dev":16777229,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":29209245,"size":1647,"blocks":8,"atimeMs":1700037343110.8684,"mtimeMs":1700037343099.798,"ctimeMs":1700037343099.798,"birthtimeMs":1699493449459.1873,"atime":"2023-11-15T08:35:43.111Z","mtime":"2023-11-15T08:35:43.100Z","ctime":"2023-11-15T08:35:43.100Z","birthtime":"2023-11-09T01:30:49.459Z"},"remove":false,"isDirectory":false,"isFile":true}
 2023-11-15 16:39:00,123 INFO 24966 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/xujiashuang/Desktop/bigdata-server/app/public/upload/20231115163515.xlsx","remove":true,"isDirectory":false,"isFile":false}
+2023-11-16 10:15:43,831 INFO 4750 [egg:logger] init all loggers with options: {"dir":"/Users/xujiashuang/Desktop/bigdata-server/logs/task-backend","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"task-backend-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{"enabled":false}}
+2023-11-16 10:15:43,834 INFO 4750 [egg:core] dump config after load, 2ms
+2023-11-16 10:15:43,846 INFO 4750 [egg-watcher] Start watching: ["/Users/xujiashuang/Desktop/bigdata-server/app","/Users/xujiashuang/Desktop/bigdata-server/config","/Users/xujiashuang/Desktop/bigdata-server/mocks","/Users/xujiashuang/Desktop/bigdata-server/mocks_proxy","/Users/xujiashuang/Desktop/bigdata-server/app.js"]
+2023-11-16 10:15:43,846 INFO 4750 [egg-watcher] Start watching: "/Users/xujiashuang/Desktop/bigdata-server/app"
+2023-11-16 10:15:43,846 INFO 4750 [egg-watcher] Start watching: "/Users/xujiashuang/Desktop/bigdata-server/config"
+2023-11-16 10:15:43,846 INFO 4750 [egg-watcher] Start watching: "/Users/xujiashuang/Desktop/bigdata-server/mocks"
+2023-11-16 10:15:43,847 INFO 4750 [egg-watcher] Start watching: "/Users/xujiashuang/Desktop/bigdata-server/mocks_proxy"
+2023-11-16 10:15:43,847 INFO 4750 [egg-watcher] Start watching: "/Users/xujiashuang/Desktop/bigdata-server/app.js"
+2023-11-16 10:15:43,847 INFO 4750 [egg-watcher:agent] watcher start success
+2023-11-16 10:15:43,874 INFO 4750 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [664ms] - #0 Process Start
+                                          ▇▇▇▇▇▇▇ [109ms] - #1 Application Start
+                                           ▇ [3ms] - #2 Load Plugin
+                                           ▇ [5ms] - #3 Load Config
+                                           ▇ [0ms] - #4 Require(0) config/config.default.js
+                                           ▇ [0ms] - #5 Require(1) node_modules/_egg-session@3.3.0@egg-session/config/config.default.js
+                                           ▇ [0ms] - #6 Require(2) node_modules/_egg-security@3.1.0@egg-security/config/config.default.js
+                                           ▇ [1ms] - #7 Require(3) node_modules/_egg-jsonp@2.0.0@egg-jsonp/config/config.default.js
+                                           ▇ [0ms] - #8 Require(4) node_modules/_egg-onerror@2.2.0@egg-onerror/config/config.default.js
+                                           ▇ [0ms] - #9 Require(5) node_modules/_egg-i18n@2.1.1@egg-i18n/config/config.default.js
+                                           ▇ [0ms] - #10 Require(6) node_modules/_egg-watcher@3.1.1@egg-watcher/config/config.default.js
+                                           ▇ [0ms] - #11 Require(7) node_modules/_egg-schedule@4.0.0@egg-schedule/config/config.default.js
+                                           ▇ [0ms] - #12 Require(8) node_modules/_egg-multipart@3.3.0@egg-multipart/config/config.default.js
+                                           ▇ [0ms] - #13 Require(9) node_modules/_egg-development@2.7.0@egg-development/config/config.default.js
+                                           ▇ [0ms] - #14 Require(10) node_modules/_egg-logrotator@3.1.0@egg-logrotator/config/config.default.js
+                                           ▇ [0ms] - #15 Require(11) node_modules/_egg-static@2.3.1@egg-static/config/config.default.js
+                                           ▇ [0ms] - #16 Require(12) node_modules/_egg-view@2.1.4@egg-view/config/config.default.js
+                                           ▇ [0ms] - #17 Require(13) node_modules/_egg-mysql@4.0.0@egg-mysql/config/config.default.js
+                                           ▇ [0ms] - #18 Require(14) node_modules/_egg-cors@2.2.3@egg-cors/config/config.default.js
+                                           ▇ [0ms] - #19 Require(15) node_modules/_egg@3.17.5@egg/config/config.default.js
+                                           ▇ [0ms] - #20 Require(16) config/config.default.js
+                                           ▇ [1ms] - #21 Require(17) node_modules/_egg-security@3.1.0@egg-security/config/config.local.js
+                                           ▇ [0ms] - #22 Require(18) node_modules/_egg-watcher@3.1.1@egg-watcher/config/config.local.js
+                                           ▇ [0ms] - #23 Require(19) node_modules/_egg-view@2.1.4@egg-view/config/config.local.js
+                                           ▇ [0ms] - #24 Require(20) node_modules/_egg@3.17.5@egg/config/config.local.js
+                                           ▇ [20ms] - #25 Load extend/agent.js
+                                           ▇ [0ms] - #26 Require(21) node_modules/_egg-security@3.1.0@egg-security/app/extend/agent.js
+                                           ▇ [18ms] - #27 Require(22) node_modules/_egg-schedule@4.0.0@egg-schedule/app/extend/agent.js
+                                            ▇ [0ms] - #28 Require(23) node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/extend/agent.js
+                                            ▇ [16ms] - #29 Load extend/context.js
+                                            ▇ [5ms] - #30 Require(24) node_modules/_egg-security@3.1.0@egg-security/app/extend/context.js
+                                             ▇ [1ms] - #31 Require(25) node_modules/_egg-jsonp@2.0.0@egg-jsonp/app/extend/context.js
+                                             ▇ [0ms] - #32 Require(26) node_modules/_egg-i18n@2.1.1@egg-i18n/app/extend/context.js
+                                             ▇ [8ms] - #33 Require(27) node_modules/_egg-multipart@3.3.0@egg-multipart/app/extend/context.js
+                                             ▇ [0ms] - #34 Require(28) node_modules/_egg-view@2.1.4@egg-view/app/extend/context.js
+                                             ▇ [1ms] - #35 Require(29) node_modules/_egg@3.17.5@egg/app/extend/context.js
+                                             ▇ [0ms] - #36 Require(30) app/extend/context.js
+                                              ▇ [17ms] - #37 Load agent.js
+                                              ▇ [0ms] - #38 Require(31) node_modules/_egg-security@3.1.0@egg-security/agent.js
+                                              ▇ [0ms] - #39 Require(32) node_modules/_egg-onerror@2.2.0@egg-onerror/agent.js
+                                              ▇ [1ms] - #40 Require(33) node_modules/_egg-watcher@3.1.1@egg-watcher/agent.js
+                                              ▇ [1ms] - #41 Require(34) node_modules/_egg-schedule@4.0.0@egg-schedule/agent.js
+                                              ▇ [11ms] - #42 Require(35) node_modules/_egg-development@2.7.0@egg-development/agent.js
+                                              ▇ [0ms] - #43 Require(36) node_modules/_egg-logrotator@3.1.0@egg-logrotator/agent.js
+                                              ▇ [4ms] - #44 Require(37) node_modules/_egg-mysql@4.0.0@egg-mysql/agent.js
+                                               ▇ [0ms] - #45 Require(38) node_modules/_egg@3.17.5@egg/agent.js
+                                               ▇ [15ms] - #46 Before Start in node_modules/_egg-watcher@3.1.1@egg-watcher/lib/init.js:15:14
+                                               ▇ [11ms] - #47 Before Start in node_modules/_egg-schedule@4.0.0@egg-schedule/agent.js:12:9
+                                               ▇▇ [39ms] - #48 Before Start in node_modules/_egg-development@2.7.0@egg-development/agent.js:12:9
+2023-11-16 10:15:43,874 INFO 4750 [egg:core] dump config after ready, 2ms
+2023-11-16 10:16:01,201 INFO 4840 [egg:logger] init all loggers with options: {"dir":"/Users/xujiashuang/Desktop/bigdata-server/logs/task-backend","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"task-backend-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{"enabled":false}}
+2023-11-16 10:16:01,205 INFO 4840 [egg:core] dump config after load, 2ms
+2023-11-16 10:16:01,217 INFO 4840 [egg-watcher] Start watching: ["/Users/xujiashuang/Desktop/bigdata-server/app","/Users/xujiashuang/Desktop/bigdata-server/config","/Users/xujiashuang/Desktop/bigdata-server/mocks","/Users/xujiashuang/Desktop/bigdata-server/mocks_proxy","/Users/xujiashuang/Desktop/bigdata-server/app.js"]
+2023-11-16 10:16:01,217 INFO 4840 [egg-watcher] Start watching: "/Users/xujiashuang/Desktop/bigdata-server/app"
+2023-11-16 10:16:01,217 INFO 4840 [egg-watcher] Start watching: "/Users/xujiashuang/Desktop/bigdata-server/config"
+2023-11-16 10:16:01,217 INFO 4840 [egg-watcher] Start watching: "/Users/xujiashuang/Desktop/bigdata-server/mocks"
+2023-11-16 10:16:01,217 INFO 4840 [egg-watcher] Start watching: "/Users/xujiashuang/Desktop/bigdata-server/mocks_proxy"
+2023-11-16 10:16:01,217 INFO 4840 [egg-watcher] Start watching: "/Users/xujiashuang/Desktop/bigdata-server/app.js"
+2023-11-16 10:16:01,217 INFO 4840 [egg-watcher:agent] watcher start success
+2023-11-16 10:16:01,228 INFO 4840 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [680ms] - #0 Process Start
+                                            ▇▇▇▇▇ [87ms] - #1 Application Start
+                                            ▇ [3ms] - #2 Load Plugin
+                                            ▇ [5ms] - #3 Load Config
+                                            ▇ [0ms] - #4 Require(0) config/config.default.js
+                                            ▇ [0ms] - #5 Require(1) node_modules/_egg-session@3.3.0@egg-session/config/config.default.js
+                                            ▇ [0ms] - #6 Require(2) node_modules/_egg-security@3.1.0@egg-security/config/config.default.js
+                                            ▇ [0ms] - #7 Require(3) node_modules/_egg-jsonp@2.0.0@egg-jsonp/config/config.default.js
+                                            ▇ [0ms] - #8 Require(4) node_modules/_egg-onerror@2.2.0@egg-onerror/config/config.default.js
+                                            ▇ [0ms] - #9 Require(5) node_modules/_egg-i18n@2.1.1@egg-i18n/config/config.default.js
+                                            ▇ [0ms] - #10 Require(6) node_modules/_egg-watcher@3.1.1@egg-watcher/config/config.default.js
+                                            ▇ [0ms] - #11 Require(7) node_modules/_egg-schedule@4.0.0@egg-schedule/config/config.default.js
+                                            ▇ [0ms] - #12 Require(8) node_modules/_egg-multipart@3.3.0@egg-multipart/config/config.default.js
+                                            ▇ [0ms] - #13 Require(9) node_modules/_egg-development@2.7.0@egg-development/config/config.default.js
+                                            ▇ [0ms] - #14 Require(10) node_modules/_egg-logrotator@3.1.0@egg-logrotator/config/config.default.js
+                                            ▇ [0ms] - #15 Require(11) node_modules/_egg-static@2.3.1@egg-static/config/config.default.js
+                                            ▇ [0ms] - #16 Require(12) node_modules/_egg-view@2.1.4@egg-view/config/config.default.js
+                                            ▇ [0ms] - #17 Require(13) node_modules/_egg-mysql@4.0.0@egg-mysql/config/config.default.js
+                                            ▇ [0ms] - #18 Require(14) node_modules/_egg-cors@2.2.3@egg-cors/config/config.default.js
+                                            ▇ [0ms] - #19 Require(15) node_modules/_egg@3.17.5@egg/config/config.default.js
+                                            ▇ [0ms] - #20 Require(16) config/config.default.js
+                                            ▇ [1ms] - #21 Require(17) node_modules/_egg-security@3.1.0@egg-security/config/config.local.js
+                                            ▇ [0ms] - #22 Require(18) node_modules/_egg-watcher@3.1.1@egg-watcher/config/config.local.js
+                                            ▇ [0ms] - #23 Require(19) node_modules/_egg-view@2.1.4@egg-view/config/config.local.js
+                                            ▇ [0ms] - #24 Require(20) node_modules/_egg@3.17.5@egg/config/config.local.js
+                                             ▇ [17ms] - #25 Load extend/agent.js
+                                             ▇ [0ms] - #26 Require(21) node_modules/_egg-security@3.1.0@egg-security/app/extend/agent.js
+                                             ▇ [15ms] - #27 Require(22) node_modules/_egg-schedule@4.0.0@egg-schedule/app/extend/agent.js
+                                              ▇ [1ms] - #28 Require(23) node_modules/_egg-logrotator@3.1.0@egg-logrotator/app/extend/agent.js
+                                              ▇ [14ms] - #29 Load extend/context.js
+                                              ▇ [4ms] - #30 Require(24) node_modules/_egg-security@3.1.0@egg-security/app/extend/context.js
+                                              ▇ [0ms] - #31 Require(25) node_modules/_egg-jsonp@2.0.0@egg-jsonp/app/extend/context.js
+                                              ▇ [0ms] - #32 Require(26) node_modules/_egg-i18n@2.1.1@egg-i18n/app/extend/context.js
+                                              ▇ [7ms] - #33 Require(27) node_modules/_egg-multipart@3.3.0@egg-multipart/app/extend/context.js
+                                               ▇ [0ms] - #34 Require(28) node_modules/_egg-view@2.1.4@egg-view/app/extend/context.js
+                                               ▇ [1ms] - #35 Require(29) node_modules/_egg@3.17.5@egg/app/extend/context.js
+                                               ▇ [0ms] - #36 Require(30) app/extend/context.js
+                                               ▇ [17ms] - #37 Load agent.js
+                                               ▇ [0ms] - #38 Require(31) node_modules/_egg-security@3.1.0@egg-security/agent.js
+                                               ▇ [0ms] - #39 Require(32) node_modules/_egg-onerror@2.2.0@egg-onerror/agent.js
+                                               ▇ [1ms] - #40 Require(33) node_modules/_egg-watcher@3.1.1@egg-watcher/agent.js
+                                               ▇ [1ms] - #41 Require(34) node_modules/_egg-schedule@4.0.0@egg-schedule/agent.js
+                                               ▇ [9ms] - #42 Require(35) node_modules/_egg-development@2.7.0@egg-development/agent.js
+                                               ▇ [1ms] - #43 Require(36) node_modules/_egg-logrotator@3.1.0@egg-logrotator/agent.js
+                                               ▇ [4ms] - #44 Require(37) node_modules/_egg-mysql@4.0.0@egg-mysql/agent.js
+                                                ▇ [0ms] - #45 Require(38) node_modules/_egg@3.17.5@egg/agent.js
+                                                ▇ [15ms] - #46 Before Start in node_modules/_egg-watcher@3.1.1@egg-watcher/lib/init.js:15:14
+                                                ▇ [11ms] - #47 Before Start in node_modules/_egg-schedule@4.0.0@egg-schedule/agent.js:12:9
+                                                ▇ [22ms] - #48 Before Start in node_modules/_egg-development@2.7.0@egg-development/agent.js:12:9
+2023-11-16 10:16:01,228 INFO 4840 [egg:core] dump config after ready, 1ms
+2023-11-16 10:16:23,158 INFO 4840 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js","stat":{"dev":16777231,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":22817610,"size":9451,"blocks":24,"atimeMs":1700100983120.3086,"mtimeMs":1700100983095.9038,"ctimeMs":1700100983095.9038,"birthtimeMs":1694589131351.256,"atime":"2023-11-16T02:16:23.120Z","mtime":"2023-11-16T02:16:23.096Z","ctime":"2023-11-16T02:16:23.096Z","birthtime":"2023-09-13T07:12:11.351Z"},"remove":false,"isDirectory":false,"isFile":true}
+2023-11-16 10:16:23,361 WARN 4840 [agent:development] reload worker because /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js change
+2023-11-16 10:16:46,190 WARN 4840 [agent:development] reload worker because /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js change
+2023-11-16 10:16:45,988 INFO 4840 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js","stat":{"dev":16777231,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":22817610,"size":9430,"blocks":24,"atimeMs":1700101005939.7214,"mtimeMs":1700101005925.3518,"ctimeMs":1700101005925.3518,"birthtimeMs":1694589131351.256,"atime":"2023-11-16T02:16:45.940Z","mtime":"2023-11-16T02:16:45.925Z","ctime":"2023-11-16T02:16:45.925Z","birthtime":"2023-09-13T07:12:11.351Z"},"remove":false,"isDirectory":false,"isFile":true}
+2023-11-16 10:17:01,934 WARN 4840 [agent:development] reload worker because /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js change
+2023-11-16 10:17:01,733 INFO 4840 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js","stat":{"dev":16777231,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":22817610,"size":9457,"blocks":24,"atimeMs":1700101021683.1047,"mtimeMs":1700101021671.0493,"ctimeMs":1700101021671.0493,"birthtimeMs":1694589131351.256,"atime":"2023-11-16T02:17:01.683Z","mtime":"2023-11-16T02:17:01.671Z","ctime":"2023-11-16T02:17:01.671Z","birthtime":"2023-09-13T07:12:11.351Z"},"remove":false,"isDirectory":false,"isFile":true}
+2023-11-16 10:23:06,058 WARN 4840 [agent:development] reload worker because /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js change
+2023-11-16 10:23:05,857 INFO 4840 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js","stat":{"dev":16777231,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":22817610,"size":9430,"blocks":24,"atimeMs":1700101385819.5686,"mtimeMs":1700101385794.774,"ctimeMs":1700101385794.774,"birthtimeMs":1694589131351.256,"atime":"2023-11-16T02:23:05.820Z","mtime":"2023-11-16T02:23:05.795Z","ctime":"2023-11-16T02:23:05.795Z","birthtime":"2023-09-13T07:12:11.351Z"},"remove":false,"isDirectory":false,"isFile":true}
+2023-11-16 10:23:55,975 WARN 4840 [agent:development] reload worker because /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js change
+2023-11-16 10:23:55,773 INFO 4840 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js","stat":{"dev":16777231,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":22817610,"size":9470,"blocks":24,"atimeMs":1700101435737.2612,"mtimeMs":1700101435711.5798,"ctimeMs":1700101435711.5798,"birthtimeMs":1694589131351.256,"atime":"2023-11-16T02:23:55.737Z","mtime":"2023-11-16T02:23:55.712Z","ctime":"2023-11-16T02:23:55.712Z","birthtime":"2023-09-13T07:12:11.351Z"},"remove":false,"isDirectory":false,"isFile":true}
+2023-11-16 10:23:57,278 WARN 4840 [agent:development] reload worker because /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js change
+2023-11-16 10:23:57,077 INFO 4840 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js","stat":{"dev":16777231,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":22817610,"size":9471,"blocks":24,"atimeMs":1700101437077.577,"mtimeMs":1700101437067.2913,"ctimeMs":1700101437067.2913,"birthtimeMs":1694589131351.256,"atime":"2023-11-16T02:23:57.078Z","mtime":"2023-11-16T02:23:57.067Z","ctime":"2023-11-16T02:23:57.067Z","birthtime":"2023-09-13T07:12:11.351Z"},"remove":false,"isDirectory":false,"isFile":true}
+2023-11-16 10:24:02,414 WARN 4840 [agent:development] reload worker because /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js change
+2023-11-16 10:24:02,212 INFO 4840 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js","stat":{"dev":16777231,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":22817610,"size":9471,"blocks":24,"atimeMs":1700101437585.604,"mtimeMs":1700101442201.025,"ctimeMs":1700101442201.025,"birthtimeMs":1694589131351.256,"atime":"2023-11-16T02:23:57.586Z","mtime":"2023-11-16T02:24:02.201Z","ctime":"2023-11-16T02:24:02.201Z","birthtime":"2023-09-13T07:12:11.351Z"},"remove":false,"isDirectory":false,"isFile":true}
+2023-11-16 10:24:02,914 WARN 4840 [agent:development] reload worker because /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js change
+2023-11-16 10:24:02,713 INFO 4840 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js","stat":{"dev":16777231,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":22817610,"size":9471,"blocks":24,"atimeMs":1700101442509.2847,"mtimeMs":1700101442702.5813,"ctimeMs":1700101442702.5813,"birthtimeMs":1694589131351.256,"atime":"2023-11-16T02:24:02.509Z","mtime":"2023-11-16T02:24:02.703Z","ctime":"2023-11-16T02:24:02.703Z","birthtime":"2023-09-13T07:12:11.351Z"},"remove":false,"isDirectory":false,"isFile":true}
+2023-11-16 10:24:15,063 WARN 4840 [agent:development] reload worker because /Users/xujiashuang/Desktop/bigdata-server/config/config.default.js rename
+2023-11-16 10:24:14,861 INFO 4840 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/xujiashuang/Desktop/bigdata-server/config/config.default.js","stat":{"dev":16777231,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":31494098,"size":2031,"blocks":8,"atimeMs":1700101454851.4824,"mtimeMs":1700101454851.8765,"ctimeMs":1700101454851.8765,"birthtimeMs":1700101454851.4824,"atime":"2023-11-16T02:24:14.851Z","mtime":"2023-11-16T02:24:14.852Z","ctime":"2023-11-16T02:24:14.852Z","birthtime":"2023-11-16T02:24:14.851Z"},"remove":false,"isDirectory":false,"isFile":true}
+2023-11-16 10:24:14,862 INFO 4840 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/xujiashuang/Desktop/bigdata-server/config/config.default.js","stat":{"dev":16777231,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":31494098,"size":2031,"blocks":8,"atimeMs":1700101454851.4824,"mtimeMs":1700101454851.8765,"ctimeMs":1700101454851.8765,"birthtimeMs":1700101454851.4824,"atime":"2023-11-16T02:24:14.851Z","mtime":"2023-11-16T02:24:14.852Z","ctime":"2023-11-16T02:24:14.852Z","birthtime":"2023-11-16T02:24:14.851Z"},"remove":false,"isDirectory":false,"isFile":true}
+2023-11-16 10:37:13,080 WARN 4840 [agent:development] reload worker because /Users/xujiashuang/Desktop/bigdata-server/config/config.default.js change
+2023-11-16 10:37:12,877 INFO 4840 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/xujiashuang/Desktop/bigdata-server/config/config.default.js","stat":{"dev":16777231,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":31494098,"size":2028,"blocks":8,"atimeMs":1700102232831.6587,"mtimeMs":1700102232814.2122,"ctimeMs":1700102232814.2122,"birthtimeMs":1700101454851.4824,"atime":"2023-11-16T02:37:12.832Z","mtime":"2023-11-16T02:37:12.814Z","ctime":"2023-11-16T02:37:12.814Z","birthtime":"2023-11-16T02:24:14.851Z"},"remove":false,"isDirectory":false,"isFile":true}
+2023-11-16 10:41:46,415 WARN 4840 [agent:development] reload worker because /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js change
+2023-11-16 10:41:46,212 INFO 4840 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js","stat":{"dev":16777231,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":22817610,"size":9510,"blocks":24,"atimeMs":1700102506166.5017,"mtimeMs":1700102506148.6958,"ctimeMs":1700102506148.6958,"birthtimeMs":1694589131351.256,"atime":"2023-11-16T02:41:46.167Z","mtime":"2023-11-16T02:41:46.149Z","ctime":"2023-11-16T02:41:46.149Z","birthtime":"2023-09-13T07:12:11.351Z"},"remove":false,"isDirectory":false,"isFile":true}
+2023-11-16 10:42:24,480 INFO 4840 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js","stat":{"dev":16777231,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":22817610,"size":9468,"blocks":24,"atimeMs":1700102544442.0505,"mtimeMs":1700102544417.2258,"ctimeMs":1700102544417.2258,"birthtimeMs":1694589131351.256,"atime":"2023-11-16T02:42:24.442Z","mtime":"2023-11-16T02:42:24.417Z","ctime":"2023-11-16T02:42:24.417Z","birthtime":"2023-09-13T07:12:11.351Z"},"remove":false,"isDirectory":false,"isFile":true}
+2023-11-16 10:42:24,680 WARN 4840 [agent:development] reload worker because /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js change
+2023-11-16 10:42:29,229 WARN 4840 [agent:development] reload worker because /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js change
+2023-11-16 10:42:29,028 INFO 4840 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js","stat":{"dev":16777231,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":22817610,"size":9429,"blocks":24,"atimeMs":1700102549028.0806,"mtimeMs":1700102549017.0845,"ctimeMs":1700102549017.0845,"birthtimeMs":1694589131351.256,"atime":"2023-11-16T02:42:29.028Z","mtime":"2023-11-16T02:42:29.017Z","ctime":"2023-11-16T02:42:29.017Z","birthtime":"2023-09-13T07:12:11.351Z"},"remove":false,"isDirectory":false,"isFile":true}
+2023-11-16 10:42:44,579 WARN 4840 [agent:development] reload worker because /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js change
+2023-11-16 10:42:44,377 INFO 4840 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js","stat":{"dev":16777231,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":22817610,"size":9449,"blocks":24,"atimeMs":1700102564339.1965,"mtimeMs":1700102564316.5037,"ctimeMs":1700102564316.5037,"birthtimeMs":1694589131351.256,"atime":"2023-11-16T02:42:44.339Z","mtime":"2023-11-16T02:42:44.317Z","ctime":"2023-11-16T02:42:44.317Z","birthtime":"2023-09-13T07:12:11.351Z"},"remove":false,"isDirectory":false,"isFile":true}
+2023-11-16 10:42:45,641 INFO 4840 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js","stat":{"dev":16777231,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":22817610,"size":9450,"blocks":24,"atimeMs":1700102564875.9292,"mtimeMs":1700102565630.5322,"ctimeMs":1700102565630.5322,"birthtimeMs":1694589131351.256,"atime":"2023-11-16T02:42:44.876Z","mtime":"2023-11-16T02:42:45.631Z","ctime":"2023-11-16T02:42:45.631Z","birthtime":"2023-09-13T07:12:11.351Z"},"remove":false,"isDirectory":false,"isFile":true}
+2023-11-16 10:42:45,843 WARN 4840 [agent:development] reload worker because /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js change
+2023-11-16 10:42:46,630 WARN 4840 [agent:development] reload worker because /Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js change
+2023-11-16 10:42:46,428 INFO 4840 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/xujiashuang/Desktop/bigdata-server/app/service/bigdata.js","stat":{"dev":16777231,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":22817610,"size":9450,"blocks":24,"atimeMs":1700102565644.6123,"mtimeMs":1700102566417.2795,"ctimeMs":1700102566417.2795,"birthtimeMs":1694589131351.256,"atime":"2023-11-16T02:42:45.645Z","mtime":"2023-11-16T02:42:46.417Z","ctime":"2023-11-16T02:42:46.417Z","birthtime":"2023-09-13T07:12:11.351Z"},"remove":false,"isDirectory":false,"isFile":true}
+2023-11-16 11:21:18,080 ERROR 4840 nodejs.ClusterClientNoResponseError: client no response in 70849ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 4840
+hostname: xjswwdeMBP
+
+2023-11-16 11:26:57,031 ERROR 4840 nodejs.ClusterClientNoResponseError: client no response in 258825ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 4840
+hostname: xjswwdeMBP
+
+2023-11-16 11:28:09,850 ERROR 4840 nodejs.ClusterClientNoResponseError: client no response in 72773ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 4840
+hostname: xjswwdeMBP
+
+2023-11-16 11:45:42,387 ERROR 4840 nodejs.ClusterClientNoResponseError: client no response in 1052531ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 4840
+hostname: xjswwdeMBP
+
+2023-11-16 12:02:35,359 ERROR 4840 nodejs.ClusterClientNoResponseError: client no response in 1012862ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 4840
+hostname: xjswwdeMBP
+
+2023-11-16 12:18:10,348 ERROR 4840 nodejs.ClusterClientNoResponseError: client no response in 934888ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 4840
+hostname: xjswwdeMBP
+
+2023-11-16 12:35:01,353 ERROR 4840 nodejs.ClusterClientNoResponseError: client no response in 1010898ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 4840
+hostname: xjswwdeMBP
+
+2023-11-16 12:39:19,734 ERROR 4840 nodejs.ClusterClientNoResponseError: client no response in 258293ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 4840
+hostname: xjswwdeMBP
+
+2023-11-16 12:55:39,391 ERROR 4840 nodejs.ClusterClientNoResponseError: client no response in 979653ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 4840
+hostname: xjswwdeMBP
+
+2023-11-16 13:11:49,353 ERROR 4840 nodejs.ClusterClientNoResponseError: client no response in 969871ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 4840
+hostname: xjswwdeMBP
+
+2023-11-16 13:22:56,056 ERROR 4840 nodejs.ClusterClientNoResponseError: client no response in 666692ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 4840
+hostname: xjswwdeMBP
+
+2023-11-16 13:25:25,893 ERROR 4840 nodejs.ClusterClientNoResponseError: client no response in 89829ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 4840
+hostname: xjswwdeMBP
+

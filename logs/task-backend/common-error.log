@@ -590,3 +590,193 @@ name: "ER_ACCESS_DENIED_ERRORError"
 pid: 24917
 hostname: xjswwdeMBP
 
+2023-11-16 10:15:44,361 ERROR 4755 [-/127.0.0.1/-/0ms GET /] nodejs.ER_NOT_SUPPORTED_AUTH_MODEError: ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Sequence._packetToError (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Handshake.js:123:18)
+    at Protocol._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Protocol._enqueue (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Pool.js:48:16)
+    at node:internal/util:360:7
+    at new Promise (<anonymous>)
+    at Pool.getConnection (node:internal/util:346:12)
+    at Pool.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Pool.js:202:8)
+    at node:internal/util:360:7
+    at new Promise (<anonymous>)
+    sql: select now() as currentTime;
+code: "ER_NOT_SUPPORTED_AUTH_MODE"
+errno: 1251
+sqlMessage: "Client does not support authentication protocol requested by server; consider upgrading MySQL client"
+sqlState: "08004"
+fatal: true
+name: "ER_NOT_SUPPORTED_AUTH_MODEError"
+pid: 4755
+hostname: xjswwdeMBP
+
+2023-11-16 10:24:15,668 ERROR 5284 [-/127.0.0.1/-/1ms GET /] nodejs.ER_NOT_SUPPORTED_AUTH_MODEError: ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Sequence._packetToError (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Handshake.js:123:18)
+    at Protocol._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Protocol._enqueue (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Pool.js:48:16)
+    at node:internal/util:360:7
+    at new Promise (<anonymous>)
+    at Pool.getConnection (node:internal/util:346:12)
+    at Pool.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Pool.js:202:8)
+    at node:internal/util:360:7
+    at new Promise (<anonymous>)
+    sql: select now() as currentTime;
+code: "ER_NOT_SUPPORTED_AUTH_MODE"
+errno: 1251
+sqlMessage: "Client does not support authentication protocol requested by server; consider upgrading MySQL client"
+sqlState: "08004"
+fatal: true
+name: "ER_NOT_SUPPORTED_AUTH_MODEError"
+pid: 5284
+hostname: xjswwdeMBP
+
+2023-11-16 11:21:18,074 ERROR 4840 nodejs.ClusterClientNoResponseError: client no response in 70849ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 4840
+hostname: xjswwdeMBP
+
+2023-11-16 11:26:56,946 ERROR 4840 nodejs.ClusterClientNoResponseError: client no response in 258825ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 4840
+hostname: xjswwdeMBP
+
+2023-11-16 11:28:09,849 ERROR 4840 nodejs.ClusterClientNoResponseError: client no response in 72773ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 4840
+hostname: xjswwdeMBP
+
+2023-11-16 11:45:42,387 ERROR 4840 nodejs.ClusterClientNoResponseError: client no response in 1052531ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 4840
+hostname: xjswwdeMBP
+
+2023-11-16 12:02:35,359 ERROR 4840 nodejs.ClusterClientNoResponseError: client no response in 1012862ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 4840
+hostname: xjswwdeMBP
+
+2023-11-16 12:18:10,248 ERROR 4840 nodejs.ClusterClientNoResponseError: client no response in 934888ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 4840
+hostname: xjswwdeMBP
+
+2023-11-16 12:35:01,351 ERROR 4840 nodejs.ClusterClientNoResponseError: client no response in 1010898ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 4840
+hostname: xjswwdeMBP
+
+2023-11-16 12:39:19,733 ERROR 4840 nodejs.ClusterClientNoResponseError: client no response in 258293ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 4840
+hostname: xjswwdeMBP
+
+2023-11-16 12:55:39,391 ERROR 4840 nodejs.ClusterClientNoResponseError: client no response in 979653ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 4840
+hostname: xjswwdeMBP
+
+2023-11-16 13:11:49,266 ERROR 4840 nodejs.ClusterClientNoResponseError: client no response in 969871ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 4840
+hostname: xjswwdeMBP
+
+2023-11-16 13:22:56,056 ERROR 4840 nodejs.ClusterClientNoResponseError: client no response in 666692ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 4840
+hostname: xjswwdeMBP
+
+2023-11-16 13:25:25,893 ERROR 4840 nodejs.ClusterClientNoResponseError: client no response in 89829ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_cluster-client@3.5.0@cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 4840
+hostname: xjswwdeMBP
+
+2023-11-16 15:00:00,025 ERROR 6075 [-/127.0.0.1/-/87ms SCHEDULE /__schedule?path=/Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js&cron=0%200%2015%20*%20*%20%3F&type=worker] [Job#1700117999877219243485571251] /Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js execute failed, used 79ms. Error: ER_NO_SUCH_TABLE: Table 'bigdata_period.subtask_list' doesn't exist
+    at Sequence._packetToError (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Pool.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_mysql@2.18.1@mysql/lib/Pool.js:199:23)
+    at node:internal/util:360:7
+    at new Promise (<anonymous>)
+    at Pool.query (node:internal/util:346:12)
+    at RDSClient._query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/client.js:33:33)
+    at RDSClient.query (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:62:31)
+    at RDSClient.select (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_ali-rds@5.1.2@ali-rds/lib/operator.js:120:27)
+    at logTime.subscribe (/Users/xujiashuang/Desktop/bigdata-server/app/schedule/checkTaskStatus.js:40:37)
+    at Object.task (/Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-schedule@4.0.0@egg-schedule/lib/load_schedule.js:37:22)
+    at /Users/xujiashuang/Desktop/bigdata-server/node_modules/_egg-schedule@4.0.0@egg-schedule/app.js:48:23
+    sql: SELECT * FROM `subtask_list` WHERE `status` = 3 {
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlMessage: "Table 'bigdata_period.subtask_list' doesn't exist",
+  sqlState: '42S02',
+  index: 0,
+  sql: 'SELECT * FROM `subtask_list` WHERE `status` = 3'
+}
