@@ -37,7 +37,9 @@ module.exports = (app) => {
 	router.post("/api/report/tasklist", controller.bigdata.getTaskList);
 	router.post("/api/report/addtasktype", controller.bigdata.createTaskType);
 	router.post("/api/report/deletetype", controller.bigdata.deleteTaskType);
+	router.post("/api/report/updatetype", controller.bigdata.updateTaskType);
 	router.post("/api/report/addsql", controller.bigdata.addSql);
+	router.post("/api/report/addsqlbatch", controller.bigdata.addSqlBatch);
 	router.post("/api/report/updatesql", controller.bigdata.updateTaskSql);
 	router.post("/api/report/detail", controller.bigdata.getTaskDetail);
 	router.post("/api/report/type", controller.bigdata.getReportType);
@@ -55,4 +57,5 @@ module.exports = (app) => {
 
 	router.post("/api/report/upload", controller.upload.upload);
 	router.post("/api/report/deletefile", controller.upload.deleteFile);
+	router.post("/api/report/rename", controller.upload.renameFile);
 };

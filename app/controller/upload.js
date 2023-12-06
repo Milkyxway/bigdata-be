@@ -39,13 +39,39 @@ class UploadController extends Controller {
 		try {
 			const { request } = ctx;
 			fs.unlinkSync(
-				`${path.resolve()}/app/public/upload/${request.body.fileName}`
+				`${path.resolve()}/app/public/${request.body.path}/${request.body.fileName}`
 			);
 			return ctx.sendSuccess();
 		} catch (e) {
 			return ctx.sendError(e);
 		}
 	}
+
+	renameFile(data) {
+		const { ctx } = this;
+		try {
+			const { request } = ctx;
+			let params
+			if (request.body.path === 'out') {
+				params  =  {
+					reportLink: request.body.taskName
+				}
+			} else if(request.body.path === 'upload') {
+				params = {
+					SourceExcelLink:  reques
+				}
+			}
+			fs.renameSync(`${path.resolve()}/app/public/${request.body.path}/${request.body.fileName }`,`${path.resolve()}/app/public/${request.body.path}/${request.body.taskName}.xlsx`)
+
+			this.app.mysql.update('report_list', { report})
+			return ctx.sendSuccess();
+		} catch (e) {
+			return ctx.sendError(e);
+		}
+	}
+	
+	
+
 }
 
 module.exports = UploadController;

@@ -127,7 +127,7 @@ class BigDataService extends Service {
 		return true;
 	}
 
-	handleQueryToSqlStr(rest, reportName) {
+	handleQueryToSqlStr(rest, reportName, username) {
 		let notEmptyParams = {};
 		let whereStr = "";
 		Object.keys(rest).map((i) => {
@@ -151,6 +151,9 @@ class BigDataService extends Service {
 		if (reportName) {
 			whereStr = commonSql("reportName", reportName);
 		}
+		if (username) {
+			whereStr = commonSql('username', username);
+		}
 		return whereStr;
 	}
 
@@ -161,18 +164,19 @@ class BigDataService extends Service {
 	getTaskList(query) {
 		return new Promise(async (resolve, reject) => {
 			try {
-				const { pageNum, pageSize, reportName, ...rest } = query;
-				let whereStr = this.handleQueryToSqlStr(rest, reportName);
-				const sqlStr = `select * from report_list ${whereStr} order by createTime desc limit ${
+				const { pageNum, pageSize, reportName,username, ...rest } = query;
+				let whereStr = this.handleQueryToSqlStr(rest, reportName, username);
+				const sqlStr = `select list.*, user.username username, type.reportTypeName reportTypeName from report_list list left join user on list.custID = user.userId left join report_type type on list.reportTypeId = type.reportTypeId ${whereStr} order by createTime desc limit ${
 					pageNum * pageSize
 				},${pageSize}`;
 				const list = await this.app.mysql.query(sqlStr);
 				const [{ "COUNT(*)": total }] = await this.app.mysql.query(
-					`SELECT COUNT(*) from report_list ${whereStr}`
+					`SELECT COUNT(*) from report_list list left join user on list.custID = user.userId left join report_type type on list.reportTypeId = type.reportTypeId ${whereStr}`
 				);
 				resolve({
 					list,
 					total,
+					sqlStr
 				});
 			} catch (e) {
 				reject(e);
@@ -224,6 +228,16 @@ class BigDataService extends Service {
 				reject(e);
 			}
 		});
+	}
+	addSqlBatch(list) {
+		return new Promise(async(resolve, reject) => {
+			try {
+				const result = await this.app.mysql.query("INSERT INTO report_sql (reportId,reportSqlData,sqlType, ExcelTable, SourceSheet, TargetSheet) values ?", [list]);
+				resolve()
+			}catch(e) {
+				reject(e)
+			}
+		})
 	}
 
 	/**
@@ -302,11 +316,8 @@ class BigDataService extends Service {
 	getTaskSqls(query) {
 		return new Promise(async (resolve, reject) => {
 			try {
-				const result = await this.app.mysql.select("report_sql", {
-					where: {
-						reportId: query.taskId,
-					},
-				});
+				const sqlStr = `select * from report_sql where reportId = ${query.taskId} order by reportSqlId asc`
+				const result = await this.app.mysql.query(sqlStr);
 				resolve({
 					taskSqls: result.length ? result : null,
 				});
@@ -474,6 +485,21 @@ class BigDataService extends Service {
 				reject(e);
 			}
 		});
+	}
+
+	updateTaskType(data) {
+		return new Promise(async(resolve, reject)=> {
+			try {
+				await this.app.mysql.update('report_type', data, {
+					where: {
+						reportTypeId: data.reportTypeId
+					}
+				})
+				resolve()
+			}catch(e) {
+				reject(e)
+			}
+		})
 	}
 }
 

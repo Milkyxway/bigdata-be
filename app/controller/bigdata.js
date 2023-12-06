@@ -181,6 +181,26 @@ class BigDataController extends Controller {
 			return ctx.sendError(e);
 		}
 	}
+
+	async updateTaskType() {
+		const { ctx, service } = this;
+		try {
+			const result = await service.bigdata.updateTaskType(ctx.request.body);
+			return ctx.sendSuccess(result);
+		} catch (e) {
+			return ctx.sendError(e);
+		}
+	}
+
+	async addSqlBatch() {
+		const { ctx, service } = this;
+		try {
+			const result = await service.bigdata.addSqlBatch(ctx.request.body);
+			return ctx.sendSuccess(result);
+		} catch (e) {
+			return ctx.sendError(e);
+		}
+	}
 }
 
 module.exports = BigDataController;
