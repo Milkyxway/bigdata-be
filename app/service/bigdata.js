@@ -36,23 +36,7 @@ class BigDataService extends Service {
 		});
 	}
 
-	uploadSql() {
-		return new Promise((resolve, reject) => {
-			const ftp = require("ftp");
-			const client = new ftp();
-			client.on("ready", function () {
-				client.get("客户明细.sql", function (error, stream) {
-					console.log(error);
-				});
-			});
-
-			client.connect({
-				host: "172.16.179.5",
-				user: "htgl",
-				password: "zaSFW5AfrerDm6eD",
-			});
-		});
-	}
+	
 
 	async getSQL(query) {
 		const { pageNum, pageSize } = query;
@@ -60,30 +44,7 @@ class BigDataService extends Service {
 		if (query.keyword) {
 			whereStr = `where sqlName like '%${query.keyword}%'`;
 		}
-		// return new Promise((resolve, reject) => {
-		// 	const ftp = require("ftp");
-		// 	const client = new ftp();
-		// 	client.on("ready", function () {
-		// 		client.list(function (err, list) {
-		// 			if (err) throw err;
-		// 			const result = list.map((i) => {
-		// 				return {
-		// 					...i,
-		// 					name: Buffer.from(i.name, "latin1").toString("utf8"),
-		// 				};
-		// 			});
-		// 			resolve(result.filter((i) => i.type === "-"));
 
-		// 			client.end();
-		// 		});
-		// 	});
-
-		// 	client.connect({
-		// 		host: "172.16.179.5",
-		// 		user: "htgl",
-		// 		password: "zaSFW5AfrerDm6eD",
-		// 	});
-		// });
 		return new Promise(async (resolve, reject) => {
 			const sqlStr = `select * from common_sql ${whereStr} order by createTime desc`;
 			const [{ "COUNT(*)": total }] = await this.app.mysql.query(
@@ -127,7 +88,7 @@ class BigDataService extends Service {
 		return true;
 	}
 
-	handleQueryToSqlStr(rest, reportName, username) {
+	handleQueryToSqlStr(rest, reportName, username, orgId) {
 		let notEmptyParams = {};
 		let whereStr = "";
 		Object.keys(rest).map((i) => {
@@ -154,6 +115,9 @@ class BigDataService extends Service {
 		if (username) {
 			whereStr = commonSql('username', username);
 		}
+		if (orgId) {
+			whereStr = this.isEmptyObj(notEmptyParams) ? `where taskAssignOrg = ${orgId}`:`${whereStr} and taskAssignOrg = ${orgId}`
+		}
 		return whereStr;
 	}
 
@@ -164,8 +128,8 @@ class BigDataService extends Service {
 	getTaskList(query) {
 		return new Promise(async (resolve, reject) => {
 			try {
-				const { pageNum, pageSize, reportName,username, ...rest } = query;
-				let whereStr = this.handleQueryToSqlStr(rest, reportName, username);
+				const { pageNum, pageSize, reportName,username, orgId, ...rest } = query;
+				let whereStr = this.handleQueryToSqlStr(rest, reportName, username, orgId);
 				const sqlStr = `select list.*, user.username username, type.reportTypeName reportTypeName from report_list list left join user on list.custID = user.userId left join report_type type on list.reportTypeId = type.reportTypeId ${whereStr} order by createTime desc limit ${
 					pageNum * pageSize
 				},${pageSize}`;
