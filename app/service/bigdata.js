@@ -40,9 +40,12 @@ class BigDataService extends Service {
 
 	async getSQL(query) {
 		const { pageNum, pageSize } = query;
-		let whereStr = "";
+		let whereStr = ``;
+		if (query.region) {
+			whereStr = `where region like '%${query.region}%'`
+		}
 		if (query.keyword) {
-			whereStr = `where sqlName like '%${query.keyword}%'`;
+			whereStr = whereStr ?  `${whereStr} and sqlName like '%${query.keyword}%'` : `where sqlName like '%${query.keyword}%'`;
 		}
 
 		return new Promise(async (resolve, reject) => {
@@ -88,7 +91,7 @@ class BigDataService extends Service {
 		return true;
 	}
 
-	handleQueryToSqlStr(rest, reportName, username, orgId) {
+	handleQueryToSqlStr(rest, reportName, username, orgId, LargeCategory) {
 		let notEmptyParams = {};
 		let whereStr = "";
 		Object.keys(rest).map((i) => {
@@ -115,9 +118,13 @@ class BigDataService extends Service {
 		if (username) {
 			whereStr = commonSql('username', username);
 		}
+		if (LargeCategory) {
+			whereStr = commonSql('LargeCategory', LargeCategory);
+		}
 		if (orgId) {
 			whereStr = this.isEmptyObj(notEmptyParams) ? `where taskAssignOrg = ${orgId}`:`${whereStr} and taskAssignOrg = ${orgId}`
 		}
+		
 		return whereStr;
 	}
 
@@ -128,9 +135,13 @@ class BigDataService extends Service {
 	getTaskList(query) {
 		return new Promise(async (resolve, reject) => {
 			try {
-				const { pageNum, pageSize, reportName,username, orgId, ...rest } = query;
-				let whereStr = this.handleQueryToSqlStr(rest, reportName, username, orgId);
-				const sqlStr = `select list.*, user.username username, type.reportTypeName reportTypeName from report_list list left join user on list.custID = user.userId left join report_type type on list.reportTypeId = type.reportTypeId ${whereStr} order by createTime desc limit ${
+				const { pageNum, pageSize, reportName,username, orgId, region, LargeCategory,...rest } = query;
+				let whereStr = this.handleQueryToSqlStr(rest, reportName, username, orgId, LargeCategory);
+				whereStr = whereStr ? `${whereStr} and list.region like '%${region}%'` : `where list.region like '%${region}%'`
+				const sqlStr = `select list.*, user.username username, type.reportTypeName reportTypeName from 
+				report_list list left join user on list.custID = user.userId 
+				left join report_type type on list.reportTypeId = type.reportTypeId 
+				${whereStr} order by createTime desc limit ${
 					pageNum * pageSize
 				},${pageSize}`;
 				const list = await this.app.mysql.query(sqlStr);
