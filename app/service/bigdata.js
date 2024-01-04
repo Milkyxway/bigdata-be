@@ -128,6 +128,33 @@ class BigDataService extends Service {
 		return whereStr;
 	}
 
+	getExcelList(reportId) {
+		return new Promise(async(resolve, reject) => {
+			try {
+				const sqlStr = `select * from excel_list where reportId = ${reportId}`
+				const result = await this.app.mysql.query(sqlStr)
+				resolve(result)
+			}catch(e) {
+				reject(e)
+			}
+		})
+	}
+
+	setData(list) {
+		return new Promise((resolve, reject) => {
+		  let count = 0;
+		  if (list.length) {
+			list.map(async i => {
+			  const excelData = await this.getExcelList(i.reportId);
+			  i.excelData = excelData;
+			  count === list.length - 1 && resolve();
+			  count++;
+			});
+		  } else {
+			resolve();
+		  }
+		});
+	  }
 	/**
 	 * 获取任务列表
 	 * @returns
@@ -148,11 +175,13 @@ class BigDataService extends Service {
 				const [{ "COUNT(*)": total }] = await this.app.mysql.query(
 					`SELECT COUNT(*) from report_list list left join user on list.custID = user.userId left join report_type type on list.reportTypeId = type.reportTypeId ${whereStr}`
 				);
-				resolve({
-					list,
-					total,
-					sqlStr
-				});
+				
+				resolve( this.setData(list).then(res => {
+					return {
+					  total,
+					  list,
+					};
+				  }));
 			} catch (e) {
 				reject(e);
 			}
