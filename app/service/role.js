@@ -120,6 +120,39 @@ class RoleService extends Service {
 			}
 		});
 	}
+	/**
+	 * 获取防水坝账号密码
+	 * @returns 
+	 */
+	getFsbAccountPwd() {
+		return new Promise(async(resolve, reject) => {
+			try {
+				const result = await this.app.mysql.select('fangshuiba')
+				resolve(result[0])
+			}catch(e) {
+				reject(e)
+			}
+		})
+		
+	}
+
+	/**
+	 * 修改防水坝密码
+	 * @returns 
+	 */
+	 updateFsbPwd(data) {
+		return new Promise(async(resolve, reject) => {
+			try {
+				await this.app.mysql.update('fangshuiba',
+				{ Password: data.Password },
+				{ where: { Id: data.Id } })
+				resolve()
+			}catch(e) {
+				reject(e)
+			}
+		})
+		
+	}
 }
 
 module.exports = RoleService;

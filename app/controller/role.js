@@ -66,6 +66,26 @@ class RoleController extends Controller {
 			return ctx.sendError(e);
 		}
 	}
+
+	async getFsbAccountPwd() {
+		const { ctx, service } = this;
+		try {
+			const result = await service.role.getFsbAccountPwd(ctx.request.body);
+			return ctx.sendSuccess(result);
+		} catch (e) {
+			return ctx.sendError(e);
+		}
+	}
+
+	async updateFsbPwd() {
+		const { ctx, service } = this;
+		try {
+			const result = await service.role.updateFsbPwd(ctx.request.body);
+			return ctx.sendSuccess(result);
+		} catch (e) {
+			return ctx.sendError(e);
+		}
+	}
 }
 
 module.exports = RoleController;
