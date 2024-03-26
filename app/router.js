@@ -61,4 +61,6 @@ module.exports = (app) => {
 	router.post("/api/report/upload", controller.upload.upload);
 	router.post("/api/report/deletefile", controller.upload.deleteFile);
 	router.post("/api/report/rename", controller.upload.renameFile);
+
+	router.post("/api/report/tasksort", controller.bigdata.taskSort);
 };

@@ -505,6 +505,19 @@ class BigDataService extends Service {
 			}
 		})
 	}
+
+
+	taskSort() {
+		return new Promise(async(resolve, reject) => {
+			try {
+				const sql = `select * from(select distinct reportName, count(reportId) total from report_list where LargeCategory = '一次性' group by reportName) a order by a.total desc `
+				const result = await this.app.mysql.query(sql)
+				resolve(result)
+			}catch(e) {
+				reject(e)
+			}
+		})
+	}
 }
 
 module.exports = BigDataService;
