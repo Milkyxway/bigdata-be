@@ -23,7 +23,7 @@ module.exports = (app) => {
 	// router.delete("/api/subtask/delete", controller.task.deleteSubTask);
 
 	router.post("/api/login", controller.role.login);
-	// router.post("/api/modifypwd", controller.role.modifypwd);
+	router.post("/api/modifypwd", controller.role.modifypwd);
 	router.post("/api/createaccount", controller.role.createaccount);
 	router.post("/api/userupdate", controller.role.updateUser);
 	router.post("/api/userdelete", controller.role.deleteUser);
