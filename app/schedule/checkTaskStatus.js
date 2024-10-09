@@ -18,7 +18,7 @@ class logTime extends Subscription {
 			lastTime: '2020-01-01 00:00:00'
 		 }, {
 			where: {
-				reportId: 534,
+				reportId: 911,
 			},
 		});
 		await this.app.mysql.update("report_list", {
@@ -26,33 +26,10 @@ class logTime extends Subscription {
 			lastTime: '2020-01-01 00:00:00'
 		 }, {
 			where: {
-				reportId: 533,
+				reportId: 910,
 			},
 		});
-		await this.app.mysql.update("report_list", {
-			reportState: 1,
-			lastTime: '2020-01-01 00:00:00'
-		 }, {
-			where: {
-				reportId: 536,
-			},
-		});
-		await this.app.mysql.update("report_list", {
-			reportState: 1,
-			lastTime: '2020-01-01 00:00:00'
-		 }, {
-			where: {
-				reportId: 560,
-			},
-		});
-		await this.app.mysql.update("report_list", {
-			reportState: 1,
-			lastTime: '2020-01-01 00:00:00'
-		 }, {
-			where: {
-				reportId: 590,
-			},
-		});
+		
 
 	}
 }
